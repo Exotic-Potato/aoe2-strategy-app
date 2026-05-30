@@ -24,6 +24,12 @@
 .DS_Store
 *.pem
 
+# editors
+/.idea
+
+# scratch / downloaded data
+/tmp
+
 # debug
 npm-debug.log*
 yarn-debug.log*

@@ -1,26 +1,680 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --text: #e9edf1;
+    --muted: #a9b3bf;
+    --card: #14161b;
+    --card-border: #2b2f36;
+    --accent: #00c2ff;
+    /* HUD/menu sizing – tweak these to taste */
+    --hud-menu-circle: 54px; /* round button size (try 46–48 if you want larger) */
+    --hud-menu-icon: 42px; /* SVG hamburger size inside the circle */
+    --hud-menu-label-size: 1.17rem; /* menu label font size */
+    --hud-menu-gap: 80px; /* space between Civilizations / Strategies / Units */
+
+    /* Civ grid fine-tuning */
+    --civ-column-min: 200px; /* min width of a civ tile */
+    --civ-item-pad-y: 10px; /* 12 */
+    --civ-item-pad-x: 12px; /* 14 */
+    --civ-icon-wrap: 42px; /* circular holder behind icon */
+    --civ-icon-size: 35px; /* actual civ icon size */
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html, body {
+    height: 100%
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+    box-sizing: border-box
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: var(--text);
+    background: #0f1115;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
 }
+
+/* Background layers */
+#bg {
+    position: fixed;
+    inset: 0;
+    background-image: url("/images/background-dark.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: saturate(.9) contrast(1.05) brightness(.8);
+    z-index: -2;
+}
+
+#overlay {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(1200px 600px at 50% -50%, rgba(0, 0, 0, .55), transparent 70%),
+    linear-gradient(180deg, rgba(9, 10, 14, .85), rgba(9, 10, 14, .35) 40%, rgba(9, 10, 14, .9));
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px
+}
+
+/* ---------- Toolbar / filters ---------- */
+.toolbar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap
+}
+
+.toolbar.glass {
+    background: linear-gradient(180deg, rgba(18, 20, 25, .86), rgba(12, 14, 18, .86));
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 10px 0 18px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .45), inset 0 0 0 1px rgba(255, 255, 255, .04);
+}
+
+.toolbar-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.select {
+    background: #0e1116;
+    color: #e6ebf2;
+    border: 1px solid rgba(255, 255, 255, .12);
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cfd7e1;
+    font-weight: 600;
+}
+
+.tag-filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: #10141b;
+    color: #cfd7e1;
+    border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.tag.active {
+    background: #062638;
+    color: #c8f0ff;
+    border-color: #0aa6db;
+}
+
+/* Civ chips row */
+.civ-row.glass {
+    background: linear-gradient(180deg, rgba(18, 20, 25, .82), rgba(12, 14, 18, .82));
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 16px;
+    padding: 10px 12px;
+    margin: 12px 0 18px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.civ-chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background: #0f1319;
+    border: 1px solid rgba(255, 255, 255, .10);
+    color: #d9e3ec;
+    transition: .15s ease;
+}
+
+.civ-chip:hover {
+    transform: translateY(-1px);
+    border-color: var(--accent);
+}
+
+.civ-chip.active {
+    box-shadow: 0 0 0 2px rgba(0, 194, 255, .28) inset;
+}
+
+/* ---------- Cards grid ---------- */
+.cards-grid {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(340px, 1fr));
+    gap: 16px;
+    align-items: start;
+}
+
+/* ---------- Slide Reveal Card ---------- */
+.slide-card {
+    position: relative;
+    width: 340px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #0e1116;
+    border: 1px solid rgba(255, 255, 255, .06);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
+    transition: transform .5s ease;
+}
+
+.slide-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Full image (no crop) */
+.card-banner-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top center;
+    background-color: #0e1116;
+    z-index: 0;
+}
+
+/* Footer gradient */
+.card-overlay--footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 170px;
+    background: linear-gradient(180deg, rgba(8, 10, 14, 0) 0%,
+    rgba(8, 10, 14, 0.70) 45%,
+    rgba(8, 10, 14, 0.92) 100%);
+    z-index: 1;
+}
+
+/* Footer content */
+.card-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 14px 18px 18px;
+}
+
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.card-tag {
+    display: inline-block;
+    background: #ff3e6c;
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 14px;
+}
+
+.card-title {
+    margin: 0 0 6px 0;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-subtitle {
+    font-size: .85rem;
+    color: #d3dae3;
+    opacity: .85
+}
+
+/* Reveal panel */
+.card-reveal {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 110px;
+    height: 210px;
+    padding: 14px;
+    border-radius: 14px;
+    z-index: 2;
+    background: rgba(18, 20, 25, .9);
+    border: 1px solid rgba(255, 255, 255, .08);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 12px 50px rgba(0, 0, 0, .45);
+    transform: translateY(160%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .75s cubic-bezier(.19, 1, .22, 1), opacity .25s ease;
+}
+
+.slide-card:hover .card-reveal {
+    transform: translateY(0%);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Intro text */
+.card-description {
+    margin: 0 0 14px 0;
+    color: #e9edf1;
+    font-size: .93rem;
+    line-height: 1.45;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity .25s ease .12s;
+}
+
+.slide-card:hover .card-description {
+    opacity: 1;
+}
+
+/* Button */
+.card-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 11px 0;
+    border-radius: 50px;
+    text-decoration: none;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: 700;
+    transition: background .25s ease, color .25s ease, transform .25s ease;
+}
+
+.card-button:hover {
+    background: #fff;
+    color: #004e92;
+    transform: translateY(-2px);
+}
+
+/* ========== Expanding Search Box ========== */
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(18, 20, 25, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    padding: 6px;
+    height: 60px;
+    width: 60px;
+    transition: width 0.45s cubic-bezier(0.19, 1, 0.22, 1), background 0.3s ease;
+    overflow: hidden;
+    cursor: text;
+    backdrop-filter: blur(6px);
+}
+
+.search-box.expanded {
+    width: 240px;
+    background: rgba(18, 20, 25, 0.88);
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+}
+
+.search-btn:hover {
+    transform: scale(1.1);
+}
+
+.search-icon {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
+}
+
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    color: #e9edf1;
+    font-size: 0.95rem;
+    flex: 1;
+    padding: 0 8px;
+    width: 0;
+    opacity: 0;
+    transition: width 0.4s ease, opacity 0.35s ease;
+}
+
+.search-box.expanded .search-text {
+    width: 100%;
+    opacity: 1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .search-box.expanded {
+        width: 180px;
+    }
+}
+
+/* ---------- HUD toolbar layout ---------- */
+.hud-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Banner image behind the HUD toolbar */
+.hud-banner {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.hud-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: url("/images/backgrounds/hud-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: .55; /* strengthen/soften the photo here */
+    filter: saturate(.9) contrast(1.05);
+}
+
+.hud-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    /* darken + vignette so labels stay readable */
+    background: radial-gradient(1200px 600px at 50% -40%, rgba(0, 0, 0, .35), transparent 65%),
+    linear-gradient(180deg, rgba(10, 12, 16, .70), rgba(10, 12, 16, .55));
+    /* subtle gold edge */
+    box-shadow: inset 0 0 0 1px rgba(244, 197, 66, .20);
+    border-radius: 16px; /* matches .toolbar.glass */
+}
+
+/* ---------- Gold Hamburger + Label ---------- */
+.hud-left {
+    display: flex;
+    gap: var(--hud-menu-gap);
+    align-items: center;
+}
+
+.hud-menu {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px 6px 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.hud-menu-circle {
+    display: grid;
+    place-items: center;
+    width: var(--hud-menu-circle);
+    height: var(--hud-menu-circle);
+    border-radius: 999px;
+    background: rgba(18, 20, 25, .82);
+    border: 1px solid rgba(255, 255, 255, .08);
+    backdrop-filter: blur(6px);
+    transition: box-shadow .25s ease, border-color .25s ease, transform .2s ease;
+}
+
+
+.hud-menu:hover .hud-menu-circle {
+    box-shadow: 0 0 0 2px rgba(244, 197, 66, .35) inset, 0 0 10px rgba(244, 197, 66, .35);
+    border-color: rgba(244, 197, 66, .65);
+    transform: translateY(-1px);
+}
+
+.hud-menu-label {
+    font-weight: 700;
+    letter-spacing: .2px;
+    color: #f1f3f6;
+    opacity: .95;
+    font-size: var(--hud-menu-label-size);
+}
+
+
+.hud-menu-svg {
+    width: var(--hud-menu-icon);
+    height: var(--hud-menu-icon);
+}
+
+
+/* Hamburger lines (gold) + animation */
+.hud-menu-svg .line {
+    fill: none;
+    stroke: #f4c542; /* gold */
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter .2s ease;
+    filter: drop-shadow(0 0 4px rgba(244, 197, 66, .3));
+}
+
+.hud-menu-svg .line1 {
+    stroke-dasharray: 60 207;
+}
+
+.hud-menu-svg .line2 {
+    stroke-dasharray: 60 60;
+}
+
+.hud-menu-svg .line3 {
+    stroke-dasharray: 60 207;
+}
+
+.hud-menu.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+}
+
+.hud-menu.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+}
+
+.hud-menu.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+}
+
+/* ---------- HUD Backdrop & Panel ---------- */
+.hud-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 10, 14, .45);
+    backdrop-filter: blur(4px);
+    z-index: 80;
+}
+
+.hud-panel {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 82px; /* sits under your toolbar (adjust if needed) */
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 16px;
+    border-radius: 16px;
+    z-index: 81;
+
+    /* glass */
+    background: linear-gradient(180deg, rgba(18, 20, 25, .90), rgba(12, 14, 18, .86));
+    border: 1px solid rgba(255, 255, 255, .08);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .45), inset 0 0 0 1px rgba(255, 255, 255, .04);
+
+    /* animate in */
+    transform: translateY(-12px);
+    opacity: 0;
+    animation: hudSlideIn .35s cubic-bezier(.19, 1, .22, 1) forwards;
+}
+
+@keyframes hudSlideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* subtle gold edge */
+.gold-edge {
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .45),
+    inset 0 0 0 1px rgba(255, 255, 255, .04),
+    0 0 0 1px rgba(244, 197, 66, .20);
+}
+
+/* When HUD open, gently blur/dim card area underneath (extra touch) */
+.blurred-underlay {
+    filter: blur(1px) brightness(.95);
+    transition: filter .2s ease;
+}
+
+/* ---------- HUD Sections ---------- */
+.hud-section {
+    display: grid;
+    gap: 12px;
+}
+
+.hud-section + .hud-section {
+    margin-top: 14px;
+}
+
+.hud-section-title {
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: .3px;
+    color: #f6f7fb;
+    margin-bottom: 2px;
+}
+
+/* Civ grid */
+.civ-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--civ-column-min), 1fr));
+    gap: 10px;
+}
+
+.civ-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: var(--civ-item-pad-y) var(--civ-item-pad-x);
+    border-radius: 12px;
+    background: rgba(15, 17, 22, .75);
+    border: 1px solid rgba(255, 255, 255, .08);
+    color: #e9edf1;
+    cursor: pointer;
+    transition: transform .15s ease, border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.civ-item:hover {
+    transform: translateY(-1px);
+    border-color: rgba(244, 197, 66, .6);
+    box-shadow: 0 0 0 2px rgba(244, 197, 66, .25) inset;
+    background: rgba(18, 20, 25, .85);
+}
+
+.civ-item.active {
+    border-color: rgba(244, 197, 66, .9);
+    box-shadow: 0 0 0 2px rgba(244, 197, 66, .35) inset;
+    background: rgba(18, 20, 25, .92);
+}
+
+.civ-icon-wrap {
+    display: grid;
+    place-items: center;
+    width: var(--civ-icon-wrap);
+    height: var(--civ-icon-wrap);
+    border-radius: 999px;
+    background: rgba(12, 14, 18, .8);
+    border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.civ-icon {
+    width: var(--civ-icon-size);
+    height: var(--civ-icon-size);
+    object-fit: contain;
+}
+
+.civ-icon-placeholder {
+    font-size: 16px;
+    opacity: .9;
+}
+
+.civ-name {
+    font-weight: 700;
+}
+
+/* Pills (strategies + units) */
+.pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pill {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(15, 17, 22, .75);
+    border: 1px solid rgba(255, 255, 255, .10);
+    color: #dfe6ee;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .15s ease, border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.pill:hover {
+    transform: translateY(-1px);
+    border-color: rgba(244, 197, 66, .6);
+    box-shadow: 0 0 0 2px rgba(244, 197, 66, .25) inset;
+    background: rgba(18, 20, 25, .85);
+}
+
+.pill.active {
+    border-color: rgba(244, 197, 66, .9);
+    box-shadow: 0 0 0 2px rgba(244, 197, 66, .35) inset;
+    background: rgba(18, 20, 25, .92);
+    color: #fff;
+}
+
+.hint {
+    color: var(--muted);
+    font-size: .9rem;
+}
+

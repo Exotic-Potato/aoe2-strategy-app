@@ -1,0 +1,1270 @@
+{
+  "civilizations": [
+    {
+      "id": "georgians",
+      "name": "Georgians"
+    },
+    {
+      "id": "burmese",
+      "name": "Burmese"
+    },
+    {
+      "id": "japanese",
+      "name": "Japanese"
+    },
+    {
+      "id": "cumans",
+      "name": "Cumans"
+    },
+    {
+      "id": "celts",
+      "name": "Celts"
+    },
+    {
+      "id": "aztecs",
+      "name": "Aztecs"
+    },
+    {
+      "id": "incas",
+      "name": "Incas"
+    },
+    {
+      "id": "goths",
+      "name": "Goths"
+    },
+    {
+      "id": "gurjaras",
+      "name": "Gurjaras"
+    },
+    {
+      "id": "mayans",
+      "name": "Mayans"
+    },
+    {
+      "id": "chinese",
+      "name": "Chinese"
+    },
+    {
+      "id": "huns",
+      "name": "Huns"
+    },
+    {
+      "id": "hindustanis",
+      "name": "Hindustanis"
+    },
+    {
+      "id": "malians",
+      "name": "Malians"
+    },
+    {
+      "id": "portuguese",
+      "name": "Portuguese"
+    },
+    {
+      "id": "khmer",
+      "name": "Khmer"
+    },
+    {
+      "id": "mongols",
+      "name": "Mongols"
+    },
+    {
+      "id": "magyars",
+      "name": "Magyars"
+    },
+    {
+      "id": "tatars",
+      "name": "Tatars"
+    },
+    {
+      "id": "franks",
+      "name": "Franks"
+    },
+    {
+      "id": "lithuanians",
+      "name": "Lithuanians"
+    },
+    {
+      "id": "persians",
+      "name": "Persians"
+    },
+    {
+      "id": "ethiopians",
+      "name": "Ethiopians"
+    },
+    {
+      "id": "saracens",
+      "name": "Saracens"
+    },
+    {
+      "id": "sicilians",
+      "name": "Sicilians"
+    },
+    {
+      "id": "britons",
+      "name": "Britons"
+    },
+    {
+      "id": "vikings",
+      "name": "Vikings"
+    },
+    {
+      "id": "italians",
+      "name": "Italians"
+    },
+    {
+      "id": "koreans",
+      "name": "Koreans"
+    },
+    {
+      "id": "vietnamese",
+      "name": "Vietnamese"
+    },
+    {
+      "id": "byzantines",
+      "name": "Byzantines"
+    },
+    {
+      "id": "spanish",
+      "name": "Spanish"
+    },
+    {
+      "id": "turks",
+      "name": "Turks"
+    },
+    {
+      "id": "teutons",
+      "name": "Teutons"
+    },
+    {
+      "id": "burgundians",
+      "name": "Burgundians"
+    },
+    {
+      "id": "poles",
+      "name": "Poles"
+    },
+    {
+      "id": "bohemians",
+      "name": "Bohemians"
+    },
+    {
+      "id": "bengalis",
+      "name": "Bengalis"
+    },
+    {
+      "id": "armenians",
+      "name": "Armenians"
+    },
+    {
+      "id": "slavs",
+      "name": "Slavs"
+    },
+    {
+      "id": "berbers",
+      "name": "Berbers"
+    },
+    {
+      "id": "dravidians",
+      "name": "Dravidians"
+    },
+    {
+      "id": "bulgarians",
+      "name": "Bulgarians"
+    },
+    {
+      "id": "malay",
+      "name": "Malay"
+    }
+  ],
+  "buildOrders": [
+    {
+      "id": "16_vils_georgians_healing_scout_rush",
+      "name": "16 Vils Georgians Healing Scout Rush",
+      "source_pdf_page": 3,
+      "introduction_text": "• Georgians have an insane early game, where they get access to a free mule cart at the cost of -50 food\n• We will abuse this bonus by scouting with the mule cart and using our scout to lure deer (optional but highly recommended)\n• We don't need to gather a single wood in the early game and so the build is super simple and easy to follow\n• Cavalry healing bonus is the main thing we will use to survive Feudal Age. We will make exactly 3 scouts (+1 initial) to rush our opponent, then wall up as shown in the video tutorial\n• The idea is to spend as little time as possible in Feudal Age, and get max value with those few scouts as we hit then run around and heal then hit again. If needed we can tower or make some more scouts or even a range for skirms to defend, but we will never do anything just for the sake of attacking\n• We either get loom or make an extra villager and up with no loom. I choose to take a risk and go no loom. Since we're going up fast I'd rather get the extra 50 res that villager would gather on the way up, and simply pick up loom first thing in Feudal before any threat comes our way",
+      "recommended_civ_names": [
+        "Georgians"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 7: Send 7 villagers to sheep @@set:food=7,pop=7",
+        "Dark Age - Vil Pop 8: Send 1 villager to boar @@add:food=1,pop=8",
+        "Dark Age - Vil Pop 11: Send 3 more vils to boar under TC @@add:food=3,pop=11",
+        "Dark Age: [Highly Recommended] Lure deer with scout and use mule cart to explore ",
+        "Dark Age - Vil Pop 12: Send 1 vil to make house then mill on berries @@add:food=1,pop=12",
+        "Dark Age - Vil Pop 13: Send 1 vil to get second boar @@add:food=1,pop=13",
+        "Dark Age - Vil Pop 16: Send 3 more vils to hunt under TC @@add:food=3,pop=16",
+        "Dark Age: Either get loom or make one more villager and send to hunt under TC",
+        "Dark Age - Vil Pop 16: Research Feudal Age (perfect landing time: 8:00)",
+        "Feudal Age - Vil Pop 16: Right away send 8 vils from hunt to woodline where you position your mule cart @@move:food=8>wood=8",
+        "Feudal Age - Vil Pop 16: Send 3 more vils from hunt to berries for 4 total on berries @@move:food=3>food=3",
+        "Feudal Age: Send 2 villagers to make a barracks once you are 50-60 percent up to Feudal",
+        "Feudal Age: Queue up loom if you opted for an extra vil in Dark Age",
+        "Feudal Age: Make a stable",
+        "Feudal Age: Research Double-Bit Axe",
+        "Feudal Age: Start walling both sides of your base using the stable builders (one to each side of the base, wall with a mix of houses and palisade walls)",
+        "Feudal Age: Make 3 scouts and harass your opponent",
+        "Feudal Age: Research Horse Collar",
+        "Feudal Age: Seed farms with all new vils. If you lack the wood, keep the vils on straggler trees and make a farm as soon as you have 60 wood",
+        "Feudal Age: Once you have 13-14 farms, send the next 7 vils to gold and make a mule cart @@add:gold=7,food=6, pop=29",
+        "Feudal Age: Make a blacksmith",
+        "Feudal Age: Click up to Castle as soon as you can (if you make extra vils send them to wood)",
+        "Castle Age: Decide what you want to do, usual plan is either 2 stable knights or castle and Monaspa spam",
+        "Castle Age: When your berries run out, make farms with the berry vils around the mill",
+        "Castle Age: Research Bloodlines, Forging, and Scale Barding Armor",
+        "Castle Age: Research Gold Mining upgrade",
+        "Castle Age: Spam either knights or Monaspas",
+        "Castle Age: Research Bow Saw",
+        "Castle Age: Make a fortified church in the best location for your vils",
+        "Castle Age: Make monks for relics",
+        "Castle Age: Make a second TC on another woodline"
+      ],
+      "whats_next_text": "• From here we try to control the game with our cavalry, our knights heal 10hp/min so if they are weak just run them around and wait before fighting, can use monk healing to speed it up\n• Add siege if needed for either defense or offense\n• You can go for more TCs and more churches to expand economy, and you can go heavy on stone for big Castle Age plays\n• The usual Imperial composition is going to be cavalry + skirm/hand cannoneer",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "17_vils_anti_lame_fast_up_dark_age_advanced",
+      "name": "17 Vils Anti-Lame Fast Up Dark Age [Advanced]",
+      "source_pdf_page": 5,
+      "introduction_text": "• This is one of my secret tools I cooked up during 3000 elo grind. I debated whether to reveal, or just leave it to those paying close attention.\n• This dark age is by far the best to beat laming, and it gets you a consistent 19 pop no loom or 18 pop with loom, regardless of your civ\n• The point of this build is to get consistency in your game, and always have a smooth dark age\n• Downsides are you eat your boars early, so you get slightly less food from them (first boar eaten with 7 vils only so a bit more rot). Second downside is that it is hard to pull off\n• I would use this pretty much every game you know you dont need infantry openings",
+      "recommended_civ_names": [],
+      "is_generic": true,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 7: Send 1 villager to boar @@add:food=1,pop=7",
+        "Dark Age - Vil Pop 9: Send 2 villagers to wood @@add:wood=2,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 more vil to boar under TC @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 more vil to grab the second boar @@add:food=1,pop=11",
+        "Dark Age - Vil Pop 12: Send 1 vil to build a house and then mill berries @@add:food=1,pop=12",
+        "Dark Age: [Mandatory] Lure at least 2 deer",
+        "Dark Age - Vil Pop 17: Send 5 more vils to food under TC @@add:food=5,pop=17",
+        "Dark Age: Add 1 villager to wood or get loom",
+        "Dark Age - Vil Pop 17: Research Feudal Age (perfect landing time: 8:25)",
+        "Feudal Age - Vil Pop 17: Send vils from hunt to wood until you have 8 on 1 lumber camp @@move:food=6>wood=6",
+        "Feudal Age - Vil Pop 17: Only make 2 lumber camps if your woodline is terrible",
+        "Feudal Age - Vil Pop 17: Send 2 vils from hunt to straggler trees @@move:food=2>wood=2",
+        "Feudal Age - Vil Pop 17: Send 2 vils from hunt to make a barracks and a house"
+      ],
+      "whats_next_text": "• A short build, but a very strong one if you understand all the little details\n• If going for archers you can send 4 vils to gold at the start of feudal\n• For scouts or spear skirm you just keep a pure food/wood economy\n• Get both eco upgrades in feudal, or skip horse collar if you want to play aggro or hit a faster castle time\n• Play a regular game from there, good habits like walling with the first 2 vils that make production building is a always aplicable. GLHF",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "17_vils_japanese_man_at_arms_rush",
+      "name": "17 Vils Japanese Man-at-Arms Rush",
+      "source_pdf_page": 6,
+      "introduction_text": "• Many civs can do a good man-at-arms rush, but few can do one as quickly as the Japanese.\n• The objective of this build is to put immense pressure on our opponent as early as possible\n• We want our first punch to be the quick man-at-arms, and we want to follow up as fast as possible with archers + fletching\n• This build is tight and leaves very little room for walling or adaptation, so we have to make sure we always have the initiative\n• After our initial push with men-at-arms + archers, we can wall and go to castle age if we are ahead or try to stabalize if we are behind\n• Immediately after luring deer, we'll try to find the opponent fast. Check this video for tips: How To Find Your Opponent FAST",
+      "recommended_civ_names": [
+        "Japanese"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 8: Send 2 villagers to wood @@add:wood=2,pop=8",
+        "Dark Age - Vil Pop 9: Send 1 villager to boar @@add:food=1,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 more vil to boar under TC @@add:food=1,pop=10",
+        "Dark Age: [Mandatory] Lure at least 2 deer",
+        "Dark Age - Vil Pop 11: Send 1 vil to make house then go back to the hunt under TC @@add:food=1,pop=11",
+        "Dark Age - Vil Pop 13: Next 2 vils to hunt under TC (get the second boar during this time) @@add:food=2,pop=13",
+        "Dark Age: Send 1 vil to make a barracks in the front of our base",
+        "Dark Age - Vil Pop 16: Send 3 more vils to food under TC @@add:food=3,pop=16",
+        "Dark Age - Vil Pop 17: Send 1 villager to wood @@add:wood=1,pop=17",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 17: Research Feudal Age (perfect landing time: 8:25)",
+        "Feudal Age - Vil Pop 17: Immediately send 2 vils from hunt to gold and make a mining camp @@move:food=2>gold=2",
+        "Feudal Age: Make 3 militia then send them across the map to the enemy asap",
+        "Feudal Age - Vil Pop 17: Send 4 vils from under TC to the initial lumber camp @@move:food=4>wood=4",
+        "Feudal Age: Make an archery range right away and start producing archers",
+        "Feudal Age: Research Man-at-arms. Target enemy vils with the men-at-arms + scout",
+        "Feudal Age: Make a blacksmith as soon as you can afford it",
+        "Feudal Age: Research Double-Bit Axe (may need to idle TC for 10 seconds to afford)",
+        "Feudal Age - Vil Pop 19: Send 2 villagers to gold @@add:gold=2 , pop=19",
+        "Feudal Age - Vil Pop 20: Send 1 vil to berries and make a mill @@add:food=1 , pop=20",
+        "Feudal Age: Slowly add vils to farms/berries before sheep run out completely",
+        "Feudal Age: Research fletching as soon as you can afford it (Idling TC for 15-20 seconds is okay to prioritize fletching)",
+        "Feudal Age: Send your archers across the map and group with remaining MAA. This army can kill vils behind palisade walls + break buildings",
+        "Feudal Age: Keep making archers at home for defense + follow up"
+      ],
+      "whats_next_text": "• After all this aggression, it's a good time to slowly set up some defenses:\n  - Against scouts, add a few spears when you can afford them and wall up\n  - Against archers, just wall up asap and if they attack you, defend with archers + a tower if needed\n• If your early aggression did a lot of damage, feel free to just wall up and defend until Castle Age once your forward army is gone\n• If your early aggression didn't do much then you'll need to try to adapt and find another win condition, since we invested a lot into it\n• Once you get to Castle Age, play it like any archer build and follow the same principles",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "18_vils_cuman_2_tc_boom",
+      "name": "18 Vils Cuman 2 TC Boom",
+      "source_pdf_page": 7,
+      "introduction_text": "• The objective of this build order is to get a huge economy lead early on in the game, before your opponent can match you\n• This is by far the best way to play Cumans, and usually leads to auto wins if it goes unpunished\n• The downsides are that if you do get punished it can be hard to react\n• There are a few things you can do to mix up the follow up after 2 TC booming, will be covering those at the end of the build",
+      "recommended_civ_names": [
+        "Cumans"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6 , pop=6",
+        "Dark Age - Vil Pop 8: Send 2 villagers to wood @@add:wood=2, pop=8",
+        "Dark Age - Vil Pop 9: Send 1 villager to boar @@add:food=1, pop=9",
+        "Dark Age: [Optional] Lure deer once you've found both boars",
+        "Dark Age - Vil Pop 11: Next 2 vils to hunt under TC (get the second boar when needed) @@add:food=2,pop=11",
+        "Dark Age - Vil Pop 12: 1 to make a house then mill @@add:food=1,pop=12",
+        "Dark Age - Vil Pop 15: Next 3 vils to hunt under TC @@add:food=3,pop=15",
+        "Dark Age - Vil Pop 18: Send 3 villagers to berries @@add:food=3,pop=18",
+        "Dark Age: On closed map like arena, you can skip loom and either make another villager or go up earlier",
+        "Dark Age - Vil Pop 18: Research Feudal Age (perfect landing time: 8:50)",
+        "Feudal Age - Vil Pop 18: Move 6 vils from hunt to wood, stay on 1 lumbercamp @@move:food=6>wood=6",
+        "Feudal Age: Make second TC on another woodline. If that is not possible then second best is to make it on a gold/stone",
+        "Feudal Age: Research double bit axe",
+        "Feudal Age: Note: On open maps id skip horse collar if you were scared of aggression. On closed maps you should always get it",
+        "Feudal Age: Villagers coming out of the TCs should be going to wood/stragglers/farms, whatever you need",
+        "Feudal Age: Note: Our main goal is to stabilize 2 TC vil production before moving on to other steps"
+      ],
+      "whats_next_text": "• Okay, at this point we're at mid feudal age you have a few options on how to continue the game, depending on what you want to do and what opponent is doing\n• If opponent is tower rushing you, you should look to secure a stone ASAP and use defensive towers. Don't be afraid to fight with villagers if it'll help deter aggression\n• If opponent has regular army like scouts or archers on open map, then I recommend just getting the counter right after stabilizing 2 TC vil production (usually 12 farms)\n• If opponent is FC + pushing you or castle dropping you on open map, you should add army like archers or scouts as soon as you know they are fast castling. This way you prevent him from building things forward on you, and it buys you more time. Remember, all in feudal with a lot of army + 2 TC eco CAN beat a fast castle all in push\n• If no aggression is coming in, or if its a closed map where you are safe, then simply get a good amount of farms then go to gold, get your feudal buildings down and go for as fast of a castle age time as possible. Undisturbed you should be hitting 19-20 mins IN castle age. GLHF!",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "18_vils_double_barracks_eagles",
+      "name": "18 Vils Double Barracks Eagles",
+      "source_pdf_page": 8,
+      "introduction_text": "Recommended civs Aztecs, Incas, Mayans\n• This is one of the unique build orders only \"Meso\" civs can do\n• It's great for those that prefer melee units, as the eagle warrior is one of the strongest and most versatile melee units in AoE2\n• The point of this build order is to get as many eagles out on the field as possible, and try to get a good Castle Age timing behind it\n• It's great against skirm, spear, and scout opening. Weak vs man-at-arms and archer opening\n• Amazing at lower levels where micro is not optimal",
+      "recommended_civ_names": [
+        "Aztecs",
+        "Incas",
+        "Mayans"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 8: Send 2 villagers to wood @@add:wood=2,pop=8",
+        "Dark Age - Vil Pop 9: Send 1 villager to boar @@add:food=1,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 vil to hunt under TC @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: 1 to make a house then mill @@add:food=1,pop=11",
+        "Dark Age - Vil Pop 12: 1 to get second boar @@add:food=1,pop=12",
+        "Dark Age: [Optional] Lure deer with scout once you've found all sheep",
+        "Dark Age - Vil Pop 18: Send 6 vils to hunt under TC @@add:food=6,pop=18",
+        "Dark Age: Get loom now if Aztecs or Incas",
+        "Dark Age - Vil Pop 18: Research Feudal Age (perfect landing time: 8:50)",
+        "Feudal Age - Vil Pop 18: Move 5 vils from hunt to wood until you have 7 on one lumber camp @@move:food=5>wood=5",
+        "Feudal Age - Vil Pop 18: Move 2 vils from hunt to gold @@move:food=2>gold=2",
+        "Feudal Age - Vil Pop 18: Send 2 vils from hunt to make barracks and a house",
+        "Feudal Age - Vil Pop 18: Move 3 vils from hunt to berries",
+        "Feudal Age: Research double bit axe",
+        "Feudal Age: [Optional] Get horse collar",
+        "Feudal Age: Send 4 vils from TC to gold",
+        "Feudal Age: Make a second barracks",
+        "Feudal Age: Create eagles from both barracks",
+        "Feudal Age: [Note] Against scout opening it's recommended to make 2 spears before starting eagle production",
+        "Feudal Age: Send vils to straggler trees and farm as soon as you can",
+        "Feudal Age: Make a blacksmith and get armor/attack for eagles if needed"
+      ],
+      "whats_next_text": "• Thats the end of the build, from here you have a few options:\n  - Add 3rd and 4th barracks if you really want to all-in feudal with eagles/spears\n  - Add a range and go for skirms and fletching/archer armor if up against heavy archers\n  - Keep adding vils to farms and gold and aim for Castle Age, don't stop production of eagles. In this case go market as 2nd building, can even sell stone to up faster\n  - In Castle Age highly recommend doing eagles as the main unit, then mixing siege against archers/CA and monks against knights/longswords. Adding economy or all-in pushing are both good options to go for\n• NOTE: You should be walling your base with this strategy, as you don't have the best scaling in feudal age. Use a tower on gold if needed, losing access to gold is usually GG",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "18_vils_fast_chickens_dark_age",
+      "name": "18 Vils Fast Chickens Dark Age",
+      "source_pdf_page": 10,
+      "introduction_text": "• This is a build you will do on Chicken arabia\n• This build can be done on every game of chickens arabia, but it is especially useful to dodge early drush tactics from your opponent. More info about this in the chickens video on light cav tier in patreon.\n• The point of the build order is to always get a good and consistent start, and then do any strategy you want while taking full advantage of your chickens\n• Any feudal age strategy can we done using this build order, but for man at arms rush you have to add a bit more to wood early\n• ONLY downside is that you cannot reliably drush with this build order, but you can still do the feudal drush just fine\n• So the idea is you can use this build order for dark age, and then combine it with another one which will include your strategy!",
+      "recommended_civ_names": [],
+      "is_generic": true,
+      "steps": [
+        "Dark Age - Vil Pop 5: Send 5 villagers to sheep @@set:food=5, pop=5",
+        "Dark Age - Vil Pop 8: 3 to make mill on chickens (shift queue the vils on each chicken for maximum efficiency) @@add:food=3,pop=8",
+        "Dark Age - Vil Pop 9: Send 1 villager to sheep @@add:food=1,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 villager to boar @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: 1 to make a house then go to straggler trees @@add:wood=1,pop=11",
+        "Dark Age - Vil Pop 14: 3 more to straggler trees @@add:wood=3,pop=14",
+        "Dark Age - Vil Pop 15: Send 1 villager to boar @@add:food=1,pop=15",
+        "Dark Age: Make a lumber camp with the 4 straggler trees",
+        "Dark Age - Vil Pop 18: 3 more to hunt under tc @@add:food=3,pop=18",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 18: Research Feudal Age (perfect landing time: 8:50)",
+        "Feudal Age: NOTE: If doing man at arms or feudal drush, add one more vil to the lumber camp right when you make it (5 total) and then go up 1 vil later (at 19 villagers)"
+      ],
+      "whats_next_text": "• Thats the end of the build, from here you can basically do any strategy\n• NOTE: You want to take berries in early feudal with 6 villagers, because you wont have enough wood to make farms if you only go for like 4 on berries. The timing that you make the mill and send the 6 villagers will differ depending on your strategy, but always end up with 6 on berries for this opening!\n• If you want to go scouts, just follow the scouts build order from after dark age, so send vils from hunt to wood and then look to make a house then a barracks\n• If you want to do archers, just follow the archer build from after dark age, which includes sending vils from hunt to wood, and then getting a mining camp on gold\n• For man at arms, you would go up on 19 vils and you would try to make your barracks and a house as soon as you can afford it. You would also need mining camp with 2 on gold\n• For feudal drush its the same concept as the man at arms\n• Afterwards, no matter which strategy you go for, its a regular game but you took full advantage of the chickens, and you'll finish them early on in feudal age so you can transition to berries and not have to defend the chicken villagers anymore",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "18_vils_scouts_into_archers",
+      "name": "18 Vils Scouts into Archers",
+      "source_pdf_page": 11,
+      "introduction_text": "Recommended civs Chinese, Huns, Malians, Portuguese\n• This is a build I thought sucked, but recently became one of my favorites. It became much better once houses were nerfed in Feudal Age (easier to break now)\n• It's great for the civs that want to end up on archers but don't want to open them due to a bad map or due to enemy skirm threat\n• This strategy is also quite flexible, you can go heavy Feudal Age and bloodlines or aim for a faster Castle Age crossbow timing\n• Amazing at countering those that make too many spears in response to your scout rush\n• Can be a difficult build order to execute, but will make the game hard for your opponent as well",
+      "recommended_civ_names": [
+        "Chinese",
+        "Huns",
+        "Malians",
+        "Portuguese"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 8: Send 2 villagers to wood @@add:wood=2,pop=8",
+        "Dark Age - Vil Pop 9: Send 1 villager to boar @@add:food=1,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 vil to hunt under TC @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: 1 to make a house then mill @@add:food=1,pop=11",
+        "Dark Age - Vil Pop 12: 1 to get second boar @@add:food=1,pop=12",
+        "Dark Age: [Optional] Lure deer with scout once you've found all sheep",
+        "Dark Age - Vil Pop 18: Send 6 vils to hunt under TC @@add:food=6,pop=18",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 18: Research Feudal Age (perfect landing time: 8:50)",
+        "Feudal Age - Vil Pop 18: Move 6 vils from hunt to wood until you have 8 on one lumber camp or 9 on two lumber camps @@move:food=6>wood=6",
+        "Feudal Age - Vil Pop 18: Move 4 vils from hunt to berries",
+        "Feudal Age - Vil Pop 18: Send 2 vils from hunt to make barracks and a house",
+        "Feudal Age: Research double bit axe",
+        "Feudal Age: [Optional] Get horse collar",
+        "Feudal Age: Make a stable",
+        "Feudal Age: Vils from TC go to hunt or straggler trees",
+        "Feudal Age: Make 1 spear minimum, more is optional depending on situation",
+        "Feudal Age: Make scouts",
+        "Feudal Age: Start making farms as soon as you can afford them, until around 8 farms",
+        "Feudal Age: Send 8 vils from tc to gold and make a mining camp",
+        "Feudal Age: Make 2 ranges as soon as you can afford them",
+        "Feudal Age: Start making archers",
+        "Feudal Age: When berries run out send them to either wood or farms",
+        "Feudal Age: Make a blacksmith and get fletching",
+        "Feudal Age: Vils from the TC go back to making farms"
+      ],
+      "whats_next_text": "• Thats the end of the build, from here you have a few options:\n  - Keep adding farms and scouts, and go for bloodlines and forging/cav armor to go all-in Feudal Age\n  - Save up for Castle Age and go for crossbow timing\n  - In Castle Age I recommend doing crossbow and a few knights to counter skirms and siege\n  - Can easily do a 2 range and 2 stable all-in gold composition in early Castle Age vs someone who doesn't have much army\n  - Going ballistics first is great if opponent is on anything that isn't elite skirmisher\n  - Add economy like normal and scale into a solid late game\n• There are A LOT of variations to this strategy that I can't cover in this build order. I have patreon video (light cav tier) on an in-depth scouts into archers guide that will take your game to the next level.",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "18_vils_scouts_into_cavalry_archers",
+      "name": "18 Vils Scouts into Cavalry Archers",
+      "source_pdf_page": 13,
+      "introduction_text": "Recommended civs Huns, Mongols, Magyars, Japanese, Tatars\n• The Objective of this build is to play safe with scouts in feudal age, and secure full walls in a decent time\n• Then we look to switch into cavalry archers instead of more stable units\n• This can surprise the opponent as he wont see the ranges if made behind the walls\n• It allows us to mass a strong late game DPS unit\n• Going scouts and not straight fast castle cav archers is to build up economy and stay safe early. Going archers in feudal into cav archers isn't great either because then opponent can be on skirms too early",
+      "recommended_civ_names": [
+        "Huns",
+        "Mongols",
+        "Magyars",
+        "Japanese",
+        "Tatars"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 8: Send 2 villagers to wood @@add:wood=2,pop=8",
+        "Dark Age - Vil Pop 9: Send 1 villager to boar @@add:food=1,pop=9",
+        "Dark Age - Vil Pop 10: 1 to make a house then mill @@add:food=1,pop=10",
+        "Dark Age: [Recommended] Lure deer once you've found all sheep",
+        "Dark Age - Vil Pop 16: Next 6 vils to hunt under TC (get the second boar when needed) @@add:food=6,pop=16",
+        "Dark Age - Vil Pop 18: Send 2 villagers to wood @@add:wood=2,pop=18",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 18: Research Feudal Age (perfect landing time: 8:50)",
+        "Feudal Age - Vil Pop 18: Move 5 vils from hunt to wood, and make a second lumber camp @@move:food=5>wood=5",
+        "Feudal Age - Vil Pop 18: Move 5 vils from hunt to berries @@move:food=6>food=6",
+        "Feudal Age - Vil Pop 18: Move 1 vils from hunt to make barracks",
+        "Feudal Age - Vil Pop 18: Make a stable with 2 vils",
+        "Feudal Age: Research double bit axe",
+        "Feudal Age: Note: Skip horse collar if scared of aggression. Always get on closed maps",
+        "Feudal Age: Use the 2 vils that build the stable to wall opposite sides of your base",
+        "Feudal Age: Start seeding farms as soon as you have extra wood in the bank",
+        "Feudal Age: Keep adding scouts and use them to attack your opponent or defend",
+        "Feudal Age: [Optional] Make 1-4 spears if you are scared of enemy scouts",
+        "Feudal Age: Farm until you have around 15 farms (+-2 depending on situation)",
+        "Feudal Age: Send 5 vils to gold and make a mining camp",
+        "Feudal Age: Make a blacksmith",
+        "Feudal Age: When berries expire move to gold/wood/farms depending on your needs",
+        "Feudal Age: Make sure to be fully walled by this point",
+        "Feudal Age: Research Castle Age",
+        "Castle Age - Vil Pop 35+: Redistribute your economy (12 wood, 15 food, 8 gold) @@set:food=15,wood=12,gold=8,pop=35",
+        "Castle Age: Make 2 ranges",
+        "Castle Age: Research gold mining",
+        "Castle Age: Get Fletching and Bloodlines",
+        "Castle Age: Start making cavalry archers",
+        "Imperial Age: Research bow saw",
+        "Imperial Age: Get Bodkin Arrow and Husbandry"
+      ],
+      "whats_next_text": "• If you arent able to fully wall in feudal, I would abandon this build and simply make more scouts + bloodlines or switch to archers/skirms. Tower is always an option if needed. So is town watch to help defend\n• In early castle age, you can decide whether to add TCs or go for monastery/ballistics/siege. Totally dependant on the game state and what you want to prioritize\n• If you want to all in, do 3 ranges start of castle age. 2 is to scale and for light pressure\n• As game goes on look to switch to ultimate comp using cav arch: Either CA + Hussar or CA + halb. Both cases you add appropriate siege\n• Those two comps win every late game if done correctly, they are the best imperial compositions on arabia",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "18_vils_double_stable_scouts",
+      "name": "18 Vils Double Stable Scouts",
+      "source_pdf_page": 15,
+      "introduction_text": "Recommended civs Franks, Huns, Magyars, Lithuanians, Persians\n• The objective of this build is to open with a standard scout rush but then surprise our opponents by continuing to spam scouts, and even adding a 2nd stable, and in some cases a 3rd.\n• The idea is that we rush to the strongest possible feudal age unit, which is the bloodlines scout with blacksmith upgrades.\n• With 2 stables we can get enough scouts on the field to defend enemy aggression and keep him open (in most cases).\n• Once we get to fully upgraded scouts we can easily take out any unit in feudal age besides mass spearmen, but for those we try to run around them or pick them off one by one\n• The goal is to get major damage done in feudal age, and then finish off our opponent with a heavy followup once we hit castle age",
+      "recommended_civ_names": [
+        "Franks",
+        "Huns",
+        "Magyars",
+        "Lithuanians",
+        "Persians"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 8: Send 2 villagers to wood @@add:wood=2,pop=8",
+        "Dark Age - Vil Pop 9: Send 1 villager to boar @@add:food=1,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 vil to make house and then mill on berries @@add:food=1,pop=10",
+        "Dark Age: [Recommended] Lure deer with scout when you have found all sheep",
+        "Dark Age - Vil Pop 16: Next 6 vils to hunt under TC @@add:food=6,pop=16",
+        "Dark Age - Vil Pop 18: Send 2 villagers to wood @@add:wood=2,pop=18",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 18: Research Feudal Age (perfect landing time: 8:50)",
+        "Feudal Age - Vil Pop 18: Move 5 vils from hunt to wood and build a second lumber camp @@move:food=5>wood=5 ",
+        "Feudal Age - Vil Pop 18: Move 4 vils from under TC to berries @@move:food=4>food=4",
+        "Feudal Age - Vil Pop 18: Use 1 vil from under TC to make a barracks",
+        "Feudal Age - Vil Pop 18: Use 2 vils to make a stable",
+        "Feudal Age: Research double bit axe",
+        "Feudal Age: Research horse collar",
+        "Feudal Age: Use the 2 vils that build the stable to wall opposite sides of your base",
+        "Feudal Age: Start seeding farms as soon as you have extra wood in the bank",
+        "Feudal Age: Keep adding scouts and use them to attack your opponent or defend",
+        "Feudal Age: [Optional] Make 1-4 spears if you are scared of enemy scouts",
+        "Feudal Age: At around 15 farms (+-2) add a second stable",
+        "Feudal Age - Vil Pop 20: Send 2 villagers to gold @@add:gold=2,pop=20",
+        "Feudal Age: Go back to making more farms",
+        "Feudal Age: Research bloodlines",
+        "Feudal Age: Berry vils spread out to whatever resource you need once they run out",
+        "Feudal Age: Make a blacksmith",
+        "Feudal Age: Get armor and attack in the order you prefer",
+        "Feudal Age: Get wheelbarrow once were on 20 farms",
+        "Feudal Age: Be aggressive with your scouts, either aim for economy damage or try to kill enemy army"
+      ],
+      "whats_next_text": "• So at this point we have 2 stable scouts with full upgrades and a great economy. We have a choice to make. Either we commit heavier to full feudal, or we aim for castle age\n• If we want to do more in feudal, then usually we add a 3rd stable and keep adding farms with vils that come out of the tc. Keep fighting aggressively with scouts in this case\n• If we want to aim for castle age, we want to send vils from tc to gold, and sometimes even send the berry vils there once those run out to get a decent castle timing. NOTE: we probably will still be behind in castle age time in most cases, but in compensation we will have a huge scout army and potentially do alot of eco damage\n• In either case, once you hit castle age your main play is to commit with a heavy followup. Light cav upgrade is natural, 2-3 stable knights is also great.\n• We will likely be facing counter units at this point, so my advice is: vs pikes we add siege, vs camels we add monks or pikemen, and vs stonewalls we go for a forward castle or siegeshop\n• LASTLY: if your opponent fully walls in feudal, you either give up on the double stable scouts and play another strat (scouts into knights for example) or you commit to 2 stable scouts and send 5 vils to tower rush and break into his base that way.",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "18_vils_generic_modern_man_at_arms_rush",
+      "name": "18 Vils Generic Modern Man-at-Arms Rush",
+      "source_pdf_page": 17,
+      "introduction_text": "• This is the modern version of the Man-at-Arms rush, that aims to do it more consistently and attack faster than before\n• This build order can be done with any civ, but will require you to lure at least 2 deer to execute correctly\n• The goal of the build is to put a lot of pressure on your opponent with men-at-arms, then follow up with archers to either defend their retaliation, or to continue putting pressure yourself\n• Can't transition to anything except archers since we don't have much food income in early feudal\n• Feel free to make a defensive tower if you get pressured before you are ready for it, it can save you",
+      "recommended_civ_names": [],
+      "is_generic": true,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6, pop=6",
+        "Dark Age - Vil Pop 9: 3 vils to wood and make a house as part of a wall near the lumber camp @@add:wood=3,pop=9 ",
+        "Dark Age - Vil Pop 10: Send 1 villager to boar @@add:food=1,pop=10",
+        "Dark Age: [Mandatory] Lure at least 2 deer once you've found both boars",
+        "Dark Age - Vil Pop 15: Next 5 vils to hunt under TC (get the second boar when needed) @@add:food=5,pop=15",
+        "Dark Age: 1 to make barracks then a house at the front of the base",
+        "Dark Age - Vil Pop 18: Next 2 vils to hunt under TC @@add:food=3,pop=18",
+        "Dark Age: After luring deer make sure to find the rest of your sheep, then find your opponent with your scout",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 18: Research Feudal Age (perfect landing time: 8:50)",
+        "Feudal Age - Vil Pop 18: Move 5 vils from hunt to wood @@move:food=5>wood=5",
+        "Feudal Age - Vil Pop 18: Send 2 vils from hunt and/or the barracks builder to build a mining camp on gold @@move:food=2>gold=2",
+        "Feudal Age: Make 3 militia then send them out",
+        "Feudal Age - Vil Pop 18: Make a mill on berries with 1 vil",
+        "Feudal Age: Research Man-at-Arms",
+        "Feudal Age: Research double bit axe",
+        "Feudal Age - Vil Pop 23: Send 5 more vils to berries and start seeding farms when hunt runs out @@add:food=5,pop=23 ",
+        "Feudal Age: Make an archery range when you can afford it",
+        "Feudal Age: NOTE: make sure you can produce vils before making the range, otherwise add a couple more farms",
+        "Feudal Age - Vil Pop 25: After range is up send 2 more vils to gold @@add:gold=2,pop=25",
+        "Feudal Age: Keep walling your base while adding archers, spears or tower if needed",
+        "Feudal Age: Get a blacksmith when you can afford it, and get fletching",
+        "Feudal Age: Keep seeding farms and developing naturally",
+        "Feudal Age: Attack with your archers if you still have the man at arms alive, otherwise defend until fully walled then move out"
+      ],
+      "whats_next_text": "• Ok at this point we're at mid feudal age you have a few options on how to continue the game:\n  - The best option is to wall up get to castle age first and go crossbows\n  - If you need to make more army in feudal or your map is very open, consider adding a 2nd range or a stable. Rebalance your economy\n  - When the berries run out you can send them to more farms/gold or make a 2nd lumber camp with them on another woodline, since original woodline is probably pretty inefficient at this point\n• In castle age you have tons of options, go for whatever feels right with your civ matchup and position. Its a regular game from here.",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "18_vils_ethiopian_2_range_archers_for_team_games",
+      "name": "18 Vils Ethiopian 2-Range Archers for Team Games",
+      "source_pdf_page": 19,
+      "introduction_text": "• Easiest with the Ethiopians but it works for other strong archer civs too. Slower civs usually have to go up 20 pop instead\n• The objective of this build is to get as many archers as possible right away\n• We sacrifice economy in favor of army to be able to gain an early game advantage\n• We use the market to get up to castle age faster by selling stone\n• Our goal is to win either in feudal or early castle, or get such a lead that we can fall back and add economy until we can eventually win\n• This build is a lot stronger for a team game flank player because your pocket's scouts can cover your weakness to skirms",
+      "recommended_civ_names": [
+        "Ethiopians"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6 , pop=6",
+        "Dark Age - Vil Pop 8: Send 2 vils to wood and make a house with one of them @@add:wood=2,pop=8",
+        "Dark Age - Vil Pop 9: Send 1 villager to boar @@add:food=1,pop=9",
+        "Dark Age: [Recommended] Lure 1-3 deer with your scout once you found all your sheep",
+        "Dark Age - Vil Pop 15: Next 6 vils to hunt under TC (get the second boar during this time) @@add:food=6,pop=15",
+        "Dark Age - Vil Pop 16: Send 1 vil to make a mining camp on gold @@add:gold=1,pop=16",
+        "Dark Age - Vil Pop 18: Next 2 vils to hunt under TC @@add:food=2,pop=18",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 18: Research Feudal Age (perfect landing time: 8:50)",
+        "Feudal Age - Vil Pop 18: Move 7 vils from under TC to your lumber camp @@move:food=7>wood=7",
+        "Feudal Age - Vil Pop 18: Move 2 vils from under TC and send them to make a barracks and a house",
+        "Feudal Age - Vil Pop 18: Move 2 vils from under TC to collect stragglers @@move:food=2>wood=2",
+        "Feudal Age: Make 2 archery ranges and start producing archers",
+        "Feudal Age - Vil Pop 18: Use one of the range vils to make a blacksmith and send the other to food",
+        "Feudal Age: Use the blacksmith villager to make houses and small walls",
+        "Feudal Age - Vil Pop 25: Send 7 villagers to gold @@add:gold=7,pop=25",
+        "Feudal Age - Vil Pop 25: Send 2 villagers from straggler trees to food under tc (9 wood, 8 food, 8 gold) @@move:wood=2>food=2",
+        "Feudal Age: Get fletching and start attacking with archers",
+        "Feudal Age - Vil Pop 31: Send 6 villagers to berries @@add:food=6,pop=31",
+        "Feudal Age: When sheep run out, slowly add farms until you have 7-8 farms",
+        "Feudal Age - Vil Pop 33: Send 2 villagers to wood @@add:wood=2,pop=33",
+        "Feudal Age - Vil Pop 36: Send 3 villagers to gold @@add:gold=3,pop=36",
+        "Feudal Age: Make a market and sell stone to go up to castle",
+        "Feudal Age: If you are short food, continue adding villagers to whatever resource you need",
+        "Feudal Age: Try to be fully walled around this point or at least well defended",
+        "Feudal Age: Research Castle Age (perfect landing time: 19:00)",
+        "Castle Age: Research double bit axe",
+        "Castle Age: Research gold mining",
+        "Castle Age: [OPTIONAL] Get horse collar",
+        "Castle Age: Make a second lumber camp and send 6 vils to another woodline",
+        "Castle Age: Continue attacking with your archers, but DON'T lose them",
+        "Imperial Age: Get crossbow and bodkin arrow",
+        "Imperial Age: Research bow saw"
+      ],
+      "whats_next_text": "• Get university right away to go for ballistics and all-in to end the game\n• Add some siege to help push or defend against their archers and skirms\n• Add a monastery and collect relics or convert knights\n• Alternatively simply just buy back 100 stone when you wanna add another TC and play it out normally!",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "18_vils_feudal_drush",
+      "name": "18 Vils Feudal Drush",
+      "source_pdf_page": 21,
+      "introduction_text": "Recommended civs Malians, Lithuanians, Japanese, Britons, Vikings\n• The objective of this build is to go up quickly, but ensure we get the first punch by making 2 militia while we are on the way to feudal\n• 2 militia + a feudal scout has the potential to do a lot of damage, we are mainly looking to harass villagers\n• You can use your scout to block villagers as they run back to the tc, or to prevent quick walls, while your militia do the main damage\n• Another advantage is that we can see exactly what our opponent is doing before having to commit to our feudal age followup. This way we can properly react to what they are doing\n• It is difficult to afford more than 2 militia initially, but we can optionally add more militia or even man at arms upgrade once we are in feudal\n• Compared to a pre-mill drush, this build exerts more pressure with the stronger scout and allows a faster followup\n• This build is best executed with civs that have early game economy/infantry bonuses, since it can be hard to afford it without those",
+      "recommended_civ_names": [
+        "Malians",
+        "Lithuanians",
+        "Japanese",
+        "Britons",
+        "Vikings"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 9: Send 3 villagers to wood @@add:wood=3,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 villager to boar @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 vil to make house then go back to the hunt @@add:food=1,pop=11",
+        "Dark Age: [Recommended] Lure deer with your scout once you found all your sheep",
+        "Dark Age - Vil Pop 15: Next 4 vils to hunt under TC (get the second boar during this time) @@add:food=1,pop=15",
+        "Dark Age: 1 vil to make a barracks in the front of our base and a house next to it",
+        "Dark Age - Vil Pop 17: Add 1 more vil to hunt under TC @@add:food=1,pop=17",
+        "Dark Age - Vil Pop 18: Send 1 villager to wood @@add:wood=1,pop=18",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 18: Research Feudal Age (perfect landing time: 8:50)",
+        "Feudal Age: Make sure you find where your opponent is asap with your scout",
+        "Feudal Age: Make 2 militia right away then send them to your opponent's base",
+        "Feudal Age - Vil Pop 18: Send 4 vils from under TC to the initial lumber camp @@move:food=4>wood=4",
+        "Feudal Age - Vil Pop 18: Move 1 vil from under TC to berries and make a mill @@move:food=1>food=1",
+        "Feudal Age: Use your feudal scout and militia to harass opponent and pick off villagers",
+        "Feudal Age: If they fight back with vils, simply run away if they have more than 2",
+        "Feudal Age: Research double bit axe",
+        "Feudal Age: [Optional] Get horse collar",
+        "Feudal Age: Make your follow up based on what your opponent is going for",
+        "Feudal Age: Start to slowly wall up your base with 1-2 villagers using houses and walls"
+      ],
+      "whats_next_text": "• Based on your scouting, you can do the following:\n  1. If you see a stable, make 1-3 spears at home, look to go archers for yourself, and make fully walling a priority\n  2. If you see a range, either follow up with scouts to maintain map control or go for a range yourself and make defensive skirmishers while walling and going up to Castle Age\n  3. If you see them adding a lot of militia/man at arms themselves, you can either add more militia to match or add a range and play into archers\n• Make sure to adjust your economy to whichever follow up you go for. If you follow up with scouts/skirms, add a few more vils to berries and start seeding farms, whereas if you go archers you should send 3-4 vils to gold\n• If your drush finds a lot of damage you should plan an aggressive followup, if not you should play more defensively until you can wall\n• From here you can either commit to more military, add monks/siege, or simply drop 1-2 more TCs and continue developing. Try to be flexible and really consider your options to find the best approach",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "18_vils_korean_spear_skirm_rush",
+      "name": "18 Vils Korean Spear Skirm Rush",
+      "source_pdf_page": 22,
+      "introduction_text": "Recommended civs Koreans, Byzantines, Lithuanians\n• The objective of this strategy is to harass your opponent with cheap yet effective units as soon as possible\n• Allows you to be flexible by either adding a lot of spears vs scout rush, or a lot of skirms vs maa or archer play\n• You can transition into alot of things since you dont commit to gold early, you aren't spread as thin compared to an archer build\n• Amazing for lower elos because trash units are very effective there",
+      "recommended_civ_names": [
+        "Koreans",
+        "Byzantines",
+        "Lithuanians"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6 ,pop=6",
+        "Dark Age - Vil Pop 8: Send 2 villagers to wood @@add:wood=2,pop=8",
+        "Dark Age - Vil Pop 9: Send 1 villager to boar @@add:food=1,pop=9",
+        "Dark Age - Vil Pop 11: Send 2 more vils to boar under TC @@add:food=2,pop=11",
+        "Dark Age - Vil Pop 12: Send 1 vil to make house then mill on berries @@add:food=1,pop=12",
+        "Dark Age - Vil Pop 13: Send 1 vil to get second boar @@add:food=1,pop=13",
+        "Dark Age: [Optional] Lure deer",
+        "Dark Age - Vil Pop 15: Send 2 more vils to hunt under TC @@add:food=2,pop15",
+        "Dark Age - Vil Pop 18: Send 3 more vils to berries @@add:food=3,pop=18",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 18: Research Feudal Age (perfect landing time: 8:50)",
+        "Feudal Age - Vil Pop 18: Send 3 vils to initial lumber camp and make a second lumber camp with 5 more vils @@move:food=3>wood=3",
+        "Feudal Age: Make a barracks when you can afford it",
+        "Feudal Age: If needed, move a few from sheep to straggler tree temporarily for extra wood",
+        "Feudal Age: Make an archery range",
+        "Feudal Age: Make spears ASAP and send them forward",
+        "Feudal Age: Research Double-Bit Axe and Horse Collar",
+        "Feudal Age: Make skirms ASAP and send them forward",
+        "Feudal Age: Make farms until you have 14-16",
+        "Feudal Age: Harass opponent and mix spears/skirms as you see fit",
+        "Feudal Age: After that send 7 vils to gold and make mining camp",
+        "Feudal Age: Make a blacksmith during that time and get fletching",
+        "Feudal Age: Finish walling your map with houses and palisades",
+        "Feudal Age: After 7 to gold, send vils to wood until you can click up",
+        "Feudal Age: When berries run out, send them to either gold/wood/farms as you see fit"
+      ],
+      "whats_next_text": "• That's the end of the build. Here's a few options to continue the game:\n  - Send 2 more to gold and play 2-range crossbows if opponent is going longswords or heavy knights\n  - Stay on skirm/spear and get the elite skirm and the pikemen upgrade. Also recommend getting armor for infantry in this case\n  - Switch to knights (or camels if you are Byzantines) if opponent is super open or if he's going mainly siege\n  - Simply add 2 more TCs and get a monastery to pick up relics if nothing crazy is happening\n  - Send 8 vils to stone on the way up to castle age and go for a guard tower rush or a castle drop",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "18_vils_1_stable_scouts",
+      "name": "18 Vils 1-Stable Scouts",
+      "source_pdf_page": 23,
+      "introduction_text": "Recommended civs Franks, Huns, Lithuanians, Magyars, Malians\n• The objective of this build is to go up quickly and start putting pressure with scouts\n• Our goal is to use our mobility and be the first to attack our opponent\n• After the initial few scouts, if the opponent is mainly on archers/spearmen, we will make a tech switch into skirms to have scouts and skirms on the field\n• Once we secure map control, we should look to fully wall our base to stay safe from counter attacks\n• If the opponent goes for militia/maa aggression, make it a priority to clean their army before attacking them. Do this by using your vils and scouts and 1 spear to take their infantry out\n• This build is best executed with a civilization that has bloodlines, because ideally we want to go into knights in castle age, and we want to have the option to go heavy scouts in feudal",
+      "recommended_civ_names": [
+        "Franks",
+        "Huns",
+        "Lithuanians",
+        "Magyars",
+        "Malians"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 8: Send 2 villagers to wood @@add:wood=2,pop=8",
+        "Dark Age - Vil Pop 9: Send 1 villager to boar @@add:food=1,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 vil to make house then mill on berries @@add:food=1,pop=10",
+        "Dark Age: [Recommended] Lure deer with your scout once you found all your sheep",
+        "Dark Age - Vil Pop 16: Next 6 vils to hunt under TC (get the second boar during this time) @@add:food=6,pop=16",
+        "Dark Age - Vil Pop 18: Send 2 villagers to wood @@add:wood=2,pop=18",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 18: Research Feudal Age (perfect landing time: 8:50)",
+        "Feudal Age - Vil Pop 18: Either send 4 vils to the initial lumber camp (8 total, more aggressive) or 5 vils to make a new lumber camp (9 total, more defensive) @@move:food=4>wood=4",
+        "Feudal Age - Vil Pop 18: Move 4 vils from under TC to berries @@move:food=4>food=4",
+        "Feudal Age - Vil Pop 18: Move 1 vil from under TC to make a barracks 60% of the way to feudal",
+        "Feudal Age - Vil Pop 18: Make a stable with 2 vils",
+        "Feudal Age: Research double bit axe",
+        "Feudal Age: Research horse collar",
+        "Feudal Age: Use the 2 vils that build the stable to wall opposite sides of your base",
+        "Feudal Age: Start seeding farms as soon as you have extra wood in the bank",
+        "Feudal Age: Keep adding scouts and use them to attack your opponent or defend",
+        "Feudal Age: [Optional] Make 1-4 spears if you are scared of enemy scouts"
+      ],
+      "whats_next_text": "• If opponent is on mainly arch/spear, we can add a range and make skirms\n• If opponent is on scouts, then we can continue adding scouts and a couple more spears until we are fully walled, once fully walled take all your military units and attack them\n• We will naturally want a blacksmith, so pick that up when you can\n• If game is hectic in feudal age, pick up bloodlines once you have 7-8 scouts, then pick up armor/attack on them\n• Pick up horse collar (if you skipped it) and gold mining upgrade after you click up to castle age\n• Once in castle age we have a ton of options, I recommend going 2 stable knights as a default, but also going elite skirm from 1 range if they has a huge mass of xbow\n• Light cav is a great option if you have a bunch of left over scouts or if you want to counter their monks\n• Prioritize blacksmith upgrades depending on the situation\n• Get bow saw\n• From here you can either commit to more military, add monks/siege, or simply drop 1-2 more TCs and continue developing. Try to be flexible and really consider your options to find the best approach",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "19_vils_eagle_and_range_feudal_rush",
+      "name": "19 Vils Eagle and Range Feudal Rush",
+      "source_pdf_page": 24,
+      "introduction_text": "• The objective of this build is to put pressure with 2 different units, making it hard for your opponent to have a counter\n• We will start making eagles right away in feudal and also make a range for archers or skirms\n• Once you make 2 eagles (+1 initial) and 3 ranged units, you can attack your opponent with an army he basically cant stop at this point\n• The hard part is deciding what you want to make, we can either make archers vs man at arms/scouts, or you make skirms if up against archers\n• This way we always win the early fights, archer + eagle should beat scouts (mix in 1 spear if needed) and skirm eagle will destroy archers\n• With this build we are also building up alot of eagles, so if you dont lose many of them you can keep them until castle age for a dangerous eagle warrior all in",
+      "recommended_civ_names": [
+        "Aztecs",
+        "Incas",
+        "Mayans"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 8: Send 2 villagers to wood @@add:wood=2,pop=8",
+        "Dark Age - Vil Pop 9: Send 1 villager to boar @@add:food=1,pop=9",
+        "Dark Age - Vil Pop 11: Next 2 vils to hunt under TC @@add:food=2,pop=11",
+        "Dark Age: [Recommended] Lure 3 deer with your eagle scout once all sheep are found",
+        "Dark Age - Vil Pop 12: Send 1 vil to make house then make a mill @@add:food=1,pop=12",
+        "Dark Age - Vil Pop 16: Next 4 vils to hunt under TC (get the second boar during this time) @@add:food=4,pop=16",
+        "Dark Age - Vil Pop 17: Send 1 villager to berries @@add:food=1,pop=17",
+        "Dark Age - Vil Pop 19: Send 2 villagers to wood @@add:wood=2,pop=19",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 19: Research Feudal Age (perfect landing time: 9:15)",
+        "Feudal Age - Vil Pop 19: Send 5 vils from hunt to make a second lumber camp @@move:food=5>wood=5",
+        "Feudal Age - Vil Pop 19: Move 1 vil from hunt to initial woodline @@move:food=1>wood=1",
+        "Feudal Age - Vil Pop 19: Move 2 vils from hunt to berries @@move:food=2>food=2",
+        "Feudal Age: Send 1 vil from hunt to make a barracks when you're around 50% up",
+        "Feudal Age - Vil Pop 19: Send 3 from hunt to make a mining camp on gold @@move:food=3>gold=3",
+        "Feudal Age: Research double bit axe (skip horse collar for now)",
+        "Feudal Age: Start making eagles",
+        "Feudal Age: Make an archery range with 2 villagers and use those to wall your base with houses and palisades (1 to each side and wall slowly but consistently)",
+        "Feudal Age: DECISION: If you want archers, send your first 4 vils that come out of tc to gold, if you want skirms then send the first 4 villagers to straggler trees",
+        "Feudal Age: Start seeding farms as soon as you have extra wood in the bank",
+        "Feudal Age: Keep pumping eagles + archer/skirm and start to develop farm eco",
+        "Feudal Age: Make a blacksmith when you can",
+        "Feudal Age: Research Fletching"
+      ],
+      "whats_next_text": "• Thats the end of the build order, but i will leave you with a few options on how to proceed with the game from here:\n  - If you still have alot of eagles left, you can get infantry armor and/or forging if you still wanna pressure hard in feudal\n  - If needed make 1-2 spears to attack or defend against scouts\n  - Make a market if needed (since it's a hard build it's okay to go early market + it can let you sell stone for all in eagles in Castle Age)\n• Pick up horse collar + gold mining upgrade after you click up to castle age\n• Once in castle age you can either go all in eagles + monk/siege or you can go for range unit upgrade + bodkin arrow and play a regular game\n• Get bow saw early castle no matter what\n• Left over eagles are great to break into enemy base with ranged option, or to scout map and play for relics. Can also snipe enemy monks and siege very easily\n• Going into late game try to secure extra golds or relics since meso is not amazing without gold",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "19_vils_man_at_arms_into_skirms",
+      "name": "19 Vils Man-at-Arms Into Skirms",
+      "source_pdf_page": 26,
+      "introduction_text": "Recommended civs Bulgarians, Dravidians, Japanese, Vikings\n• This strategy is probably the one that got buffed the most in the new patch\n• Its now a build that can be used to pressure early, but ALSO to go for full feudal age by adding in more man at arms, and potentially grabbing arson\n• This strategy beats most compositions in feudal, only dies to full scouts with bloodlines, but in that case you can easily mix in a few spears and be fine\n• What I love most about this strategy, is how flexible it is. You start out with 3 man at arms and a range, then you can decide if you want to do archers or skirms. Then you can decide if you want to add in man at arms or not. The choice is always yours depending on the situation\n• For this specific build order, I will show you how to play the full feudal version, where we will add man at arms with skirms, and keep pressuring while getting upgrades for both units.\n• NOTE: All builds from now on will not rely on deer, but taking them when possible can help do the build faster or cleaner. If theres chickens arabia just adapt your build accordingly, it will still be the same uptime either way.",
+      "recommended_civ_names": [
+        "Bulgarians",
+        "Dravidians",
+        "Japanese",
+        "Vikings"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 9: Send 3 villagers to wood @@add:wood=3,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 villager to boar @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: 1 to make a house then mill on chickens, if not then on berries @@add:food=1,pop=11",
+        "Dark Age: [Optional] Lure 1-2 deer if available",
+        "Dark Age - Vil Pop 13: 2 more go to the mill @@add:food=2,pop=13",
+        "Dark Age - Vil Pop 14: 1 to get second boar @@add:food=1,pop=14",
+        "Dark Age - Vil Pop 16: 2 more to hunt under tc @@add:food=2,pop=16",
+        "Dark Age: 1 to make barracks then a house at the front of the base",
+        "Dark Age - Vil Pop 19: Next 2 vils to hunt under TC @@add:food=2,pop=19",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 19: Research Feudal Age (perfect landing time: 9:15)",
+        "Feudal Age - Vil Pop 19: Send 2 vils from hunt or the barracks builder to build a mining camp on gold @@add:gold=1,move:food=1>gold=1",
+        "Feudal Age: Make 3 militia then send them out",
+        "Feudal Age - Vil Pop 19: Move 5 vils from hunt to wood @@move:food=5>wood=5",
+        "Feudal Age - Vil Pop 19: When hunt starts to run out, send 3 vils from hunt to berries @@move:food=3>food=3",
+        "Feudal Age: Research Man-at-Arms",
+        "Feudal Age: Research double bit axe",
+        "Feudal Age: [optional] Get horse collar (if you can afford it)",
+        "Feudal Age: Make an archery range in front",
+        "Feudal Age: New villagers should go to straggler trees",
+        "Feudal Age: Start farming with straggler tree villagers as soon as you can afford it",
+        "Feudal Age: Start making skirmishers",
+        "Feudal Age: Get a blacksmith when you can afford it",
+        "Feudal Age: Get fletching",
+        "Feudal Age: Start adding in more man at arms",
+        "Feudal Age: Constantly produce of MAA and skirmishers, and pressure the opponent",
+        "Feudal Age: After 7-8 man at arms, get arson, so you can easily break houses and walls",
+        "Feudal Age: Once berries run out, send them to wood/farms",
+        "Feudal Age: NOTE: We only need 2 vils on gold for maa production and fletching",
+        "Feudal Age: Get Infantry armor, then skirm armor, then forging (if needed)",
+        "Feudal Age: Get wheelbarrow once you have 14-16 farmers"
+      ],
+      "whats_next_text": "• Consider a 2nd lumber camp and split your villagers if its getting too messy\n• Get horse collar if you haven't already\n• From this position you have to balance the pressure with the idea of castle age. If you are doing big damage keep up the pressure. If you forced alot of walls and a tower, but cant really get more value, then simply aim for castle age\n• HIGHLY recommend going all in castle age as a follow up. Long swords skirmishers with forward siege is solid, otherwise switching to knights or maybe a forward castle can also work\n• Afterwards you can play a standard game, add eco, grab relics. Etc. GIHF",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "19_vils_1_range_archers",
+      "name": "19 Vils 1-Range Archers",
+      "source_pdf_page": 28,
+      "introduction_text": "Recommended civs Britons, Mayans, Ethiopians, Tatars, Vikings\n• The objective of this build is to go up rather quickly and start massing archers right away\n• We commit to just 1 range because we value the faster Fletching more than the second range and more army\n• This allows for a faster Castle time, or transition into scouts as a response to our opponent having a lot of skirms\n• This build is best executed with a civilization that has both Arbalest and Bracer because that is what we are scaling into\n• It can also be done with a cavalry based civ, however, we will have to transition in mid Castle/Imp into a completely different unit class, which could make things awkward",
+      "recommended_civ_names": [
+        "Britons",
+        "Mayans",
+        "Ethiopians",
+        "Tatars",
+        "Vikings"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 9: Send 3 villagers to wood @@add:wood=3,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 villager to boar @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 vil to make house then mill on berries @@add:food=1,pop=11",
+        "Dark Age: [Recommended] Lure deer with your scout once you found all your sheep",
+        "Dark Age - Vil Pop 17: Next 6 vils to hunt under TC (get the second boar during this time) @@add:food=6,pop=17",
+        "Dark Age - Vil Pop 19: Send 2 villagers to wood @@add:wood=2,pop=19",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 19: Research Feudal Age (perfect landing time: 9:15)",
+        "Feudal Age - Vil Pop 19: Move 5 vils from under TC and make a lumber camp on a second woodline @@move:food=5>wood=5",
+        "Feudal Age - Vil Pop 19: Move 2 vils from under TC and send them to straggler trees @@move:food=2>wood=2",
+        "Feudal Age - Vil Pop 19: Move 1 vil from under TC and make a house > barracks > back to food",
+        "Feudal Age - Vil Pop 19: Move 2 vils from under TC and make a mining camp on the gold @@move:food=2>gold=2",
+        "Feudal Age: Get Double-Bit Axe (we will skip Horse Collar for now)",
+        "Feudal Age: Make a range and start producing archers asap",
+        "Feudal Age - Vil Pop 21: Send 2 villagers to gold @@add:gold=2,pop=21",
+        "Feudal Age: Make a blacksmith and get Fletching when you can afford it",
+        "Feudal Age: [Optional] Make 1-4 spears if you are scared of enemy scouts",
+        "Feudal Age - Vil Pop 21: Move 4 more vils from TC to berries (5 total on berries)",
+        "Feudal Age: Start making farms as soon as you have the wood for it",
+        "Feudal Age: Start walling with 2-3 vils using a mix of houses and palisades"
+      ],
+      "whats_next_text": "• The goal from here is to get up to Castle Age with a healthy mass of 10-15 archers and simply get Crossbowman/Bodkin\n• However, if your opponent is attacking you with many skirms and your walls aren't up yet, you can add a stable and use a few scouts to defend alongside your archers\n• When you click up to Castle Age, you can add another production building (either a 2nd range or a stable)\n• When you get to Castle Age you have a ton of options, you start by getting bow Bow Saw/Bodkin/Crossbowman then you can either add TCs for your economy, or invest more into military by adding a monastery/university/siege workshop\n• The choices are many and depend a lot on your personal style, on the civ matchup, and on the position in the game. Try to be flexible and really consider your options to find the best approach",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "19_vils_fishing_ship_build",
+      "name": "19 Vils Fishing Ship Build",
+      "source_pdf_page": 29,
+      "introduction_text": "Recommended civs Italians, Japanese, Vikings, Lithuanians, Malians\n• The objective of this build is to setup a strong early game economy with prescence on water\n• By adding 3 fishing ships in Dark Age, we are gathering more resources per second, and the longer they stay alive the more advantage we get\n• This build also sets us up nicely with a dock, which lets us fight for water more easily\n• Very adaptable build, can be used for any hybrid or water map with deep sea fish\n• Leads to a variety of strategies in Feudal Age",
+      "recommended_civ_names": [
+        "Italians",
+        "Japanese",
+        "Vikings",
+        "Lithuanians",
+        "Malians"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 11: Send 5 villagers to wood @@add:wood=5,pop=11",
+        "Dark Age - Vil Pop 12: Send 1 villager to boar @@add:food=1,pop=12",
+        "Dark Age - Vil Pop 13: Send 1 vil to make a house then a dock (then take shorefish usually) @@add:food=1,pop=13",
+        "Dark Age - Vil Pop 14: Add 1 vil to boar under TC @@add:food=1,pop=14",
+        "Dark Age - Vil Pop 15: Send 1 vil to get the second boar @@add:food=1,pop=15",
+        "Dark Age: Make fishing ships (up to 3) as soon as your dock is up, usually you also have to make a house right after your first fishing ship",
+        "Dark Age - Vil Pop 19: Add 4 more vils to food under TC @@add:food=4,pop=16",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 19: Research Feudal Age (perfect landing time: 9:15)",
+        "Feudal Age - Vil Pop 19: Right away take 7 vils from sheep under TC and make a 2nd lumber camp on another woodline @@move:food=7>wood=7"
+      ],
+      "whats_next_text": "• That's actually the end of the build, not because I can't go further, but rather because there are way too many variations of this build\n• I will give you some tips for the most common variations\n• For galley/fire galley rushes, take the rest of your sheep villagers and send them to stragglers initially, then send 3 to gold for galleys, or 5 to gold for fire galleys. Make 1-2 extra docks and get ready to fight for the water as soon as feudal kicks in\n• For maps like Four Lakes where you want to fight on land while having a dock, I recommend adding a barracks on the way up, and then if you go archers, send 3 of the remaining sheep vils to gold. If you want skirms or scouts just keep them on sheep\n• General tip for water maps is to always add in fishing ships if you have control of the water and there are plenty of deep sea fish remaining\n• Avoid fish trapping unless your water is super super safe\n• In big water go galleys and micro, in smaller ponds go for fires/demos\n• Using the market to sell stone and buy food is a good way to get to Castle Age fast without needing a ton of farms on water maps\n• In Castle Age onwards demo ships are crazy OP so take advantage of them as much as possible",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "20_vils_chinese_fast_feudal",
+      "name": "20 Vils Chinese Fast Feudal",
+      "source_pdf_page": 30,
+      "introduction_text": "• The objective of this build is to get you familiar with the most awkward start in aoe2, the chinese\n• We will do a fast feudal so you can easily go for scouts or archers using this opening, and can also adapt it to fit man at arm rush, and even a tower rush\n• Chinese opening seems difficult, but once you get the hang of it, its actually quite simple\n• The goal of the civ is to be up 2 villagers once feudal kicks in, so as long as nothing bad happens, were basically ahead by default vs the average civ",
+      "recommended_civ_names": [
+        "Chinese"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 vils to sheep right away (no houses needed) @@set:food=6,pop=6",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 7: Send 1 villager to sheep @@add:food=1,pop=7",
+        "Dark Age - Vil Pop 10: Send 3 villagers to wood @@add:wood=3,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 villager to boar @@add:food=1,pop=11",
+        "Dark Age - Vil Pop 12: Send 1 vil to make 2 houses then mill on berries @@add:food=1,pop=12",
+        "Dark Age: [Highly Recommended] Lure deer - food runs out quickly with Chinese",
+        "Dark Age - Vil Pop 16: Next 4 vils to hunt under TC (get the second boar during this time) @@add:food=4,pop=16",
+        "Dark Age - Vil Pop 20: Send 4 villagers to berries @@add:food=4,pop=20",
+        "Dark Age - Vil Pop 20: Research Feudal Age (perfect landing time: 8:25)",
+        "Feudal Age - Vil Pop 20: Move 2 vils from under TC to first lumber camp @@move:food=2>wood=2",
+        "Feudal Age - Vil Pop 20: Move 5 vils from under TC and send them to make a second lumber mill @@move:food=5>wood=5",
+        "Feudal Age: Build a barracks when you can afford it"
+      ],
+      "whats_next_text": "• If going scouts then simply make a stable in feudal and get both eco upgrades\n• If going archers then on the way up send 2-3 vils to gold and make mining camp, might be worth taking straggler trees with remaining vils on hunt. get both eco upgrades\n• If you wanna do man at arms, then make 3 militia when barracks is up and send them forward. get man at arms upgrade soon as u hit feudal, plus bit axe\n• If you wanna tower rush then you can send 4-5 vils forward and make the barracks close to enemy base, so you can reinforce with spears + range for skirms. Man at arms tower rush wont work with chinese, not enough res to afford it early on\n• After you stabilize in feudal its a regular game and were up 2 vils, so if nothing bad happens were in the lead, and thats why chinese are insane on land maps!",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "21_vils_malay_flexible_opening",
+      "name": "21 Vils Malay Flexible Opening",
+      "source_pdf_page": 31,
+      "introduction_text": "• The objective of this build is to go up at a similar time compared to other civs, but to have an extra 2 villagers giving us advantage over time\n• We will be fragile early on in this build, since the 2 extra villagers take time to pay off, therefore we want to play safe early game\n• Can either go archers, spear skirms, or scout rush with this same dark age build order. Giving u insane flexibility\n• We could opt to go militia or man at arms with free armor which sounds good on paper, but honestly it doesn't fit what the Malay really want to do early game, which is to buy time and play safe until they hit a faster castle age\n• Therefore I recommend sticking with feudal play, using this flexible build order, and then going for the right strategy in feudal age based on enemy civ, your map, and what your good at",
+      "recommended_civ_names": [
+        "Malay"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 9: Send 3 villagers to wood @@add:wood=3,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 villager to boar @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 vil to make house then make a mill @@add:food=1,pop=11",
+        "Dark Age: [Recommended] Lure deer with your scout once you found all your sheep",
+        "Dark Age - Vil Pop 16: Next 5 vils to hunt under TC (get the second boar during this time) @@add:food=5,pop=16",
+        "Dark Age - Vil Pop 19: Send 3 villagers to berries @@add:food=3,pop=19",
+        "Dark Age - Vil Pop 21: Send 2 villagers to wood @@add:wood=2,pop=21 ",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 21: Research Feudal Age (perfect landing time: 9:13)",
+        "Feudal Age - Vil Pop 21: Send 5 vils from hunt to make a second lumber camp @@move:food=5>wood=5",
+        "Feudal Age: Send 1 vil from hunt to make a barracks so it is ready when you hit feudal (earlier than other civs!)"
+      ],
+      "whats_next_text": "• Ok so I left it open ended on purpose, this is because the build order is flexible and from that position you can do 3 openings, all of which are strong\n  1. We can open 1 range archers. For this we simply send 4 vils from hunt to gold when we hit feudal age and go on the regular archer build\n  2. If you see a range, either follow up with scouts to maintain map control or go for a range yourself and make defensive skirmishers while walling and going up to Castle Age\n  3. If you see them adding a lot of militia/man at arms themselves, you can either add more militia to match or add a range and play into archers\n  4. We can open spear skirms. Just make a range and start making spears right away, spear skirm with free infantry armor is a very deadly opening with Malay\n• NOTE: In every opening we get double bit axe, horse collar is optional if you want to play more defensive and passive\n• In every opening we don't want to go for the kill right away, remember we just wanna be safe and put a little pressure early to allow us time to wall, or we wanna just stay defensive and wall up, giving opponent the initiative on purpose so we can have defenders advantage\n• In every opening you can make as many spears as u think is necessary. The free armor makes them very effective early\n• Our goal is to hit castle age first and look to do some damage with our timing advantage\n• Afterwards we can develop normally and our next big spike is with our faster imperial, trying to time that with a forward or middle of the map castle is a great way to end the game with the faster imp timing. Malay late game is ok but awkward, so avoiding a hyper late game is essential in my opinion",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "22_plus_2_vils_fast_castle_on_fortress",
+      "name": "22+2 Vils Fast Castle on Fortress",
+      "source_pdf_page": 32,
+      "introduction_text": "Recommended civs This strategy is best for all civs with standard starts. Cumans, Mayans, and Chinese will have different approaches\n• Fortress is a very tricky map that often finds itself in the map pool for both 1v1s/TGs\n• There are a few strategies you can go for, but most of them start the exact same way, which is a Fast Castle\n• Fortress starts you with 10 vils, 1 scout, 5 farms, 1 barracks, 1 castle, 4 houses, 4 towers, and a fully stone walled base\n• NOTE: On regicide version there are minor differences, most notably that u only have 150 stone instead of 200. Simply take 50 stone on the way up to Castle Age to account for this difference\n• This build order will get you to Castle Age in a very efficient manner, which will allow you to go for all kinds of strategies like pure booming, Unique Unit relic control, etc.\n• You don't want to go for fast Feudal (unless Cumans, or Malay maybe) because you can't ever pressure the opponent's defensive structures with weak Feudal Age units.",
+      "recommended_civ_names": [
+        "Cumans",
+        "Mayans",
+        "Chinese"
+      ],
+      "is_generic": true,
+      "steps": [
+        "Dark Age: Queue up vils",
+        "Dark Age - Vil Pop 4 : Send 4 vils to berries and make a mill @@set:food=4,pop=4",
+        "Dark Age - Vil Pop 7 : Send 3 vils to wood and make a lumber camp @@add:wood=3,pop=7",
+        "Dark Age - Vil Pop 10 : Send 3 vils to farms @@add:food=3,pop=10",
+        "Dark Age: Lure the boar with your scout (or a villager if you're not comfortable luring with a scout)",
+        "Dark Age: The first 1-2 vils trained go to farms while waiting for the boar to come in",
+        "Dark Age - Vil Pop 16 (initial 10 + 6 trained): Next 6 vils to food under TC (9 total + 4 on berries) @@add:food=6,pop=16",
+        "Dark Age: Lure 2nd boar when it's necessary. Time it so it comes before the first one runs out",
+        "Dark Age - Vil Pop 20: Send 4 villagers to wood @@add:wood=4,pop=20",
+        "Dark Age: When boar runs out, send all vils to farm, seeding 4 new farms",
+        "Dark Age - Vil Pop 22: Send 2 villagers to gold @@add:gold=2,pop=22",
+        "Dark Age - Vil Pop 22: Research Feudal Age (perfect landing time: 7:10)",
+        "Feudal Age: Nothing to do so feel free to think about strategy, fix any stuck villager, or grab yourself a coffee",
+        "Feudal Age: Make sure to heal your scout then scout for relics/opponent",
+        "Feudal Age - Vil Pop 24: Send 2 villagers to wood @@add:wood=2,pop=24",
+        "Feudal Age: Take 3 wood villagers and make a market and a blacksmith (2 on market, 1 on blacksmith)",
+        "Feudal Age: Research Castle Age (perfect landing time: 10:40)",
+        "Castle Age: Research double bit axe",
+        "Castle Age: Research horse collar",
+        "Castle Age: When berries run out, send the vils to where you want to place your first TC (the timing should be about perfect)"
+      ],
+      "whats_next_text": "• That's the end of the build order. Here are a few things you can do to continue the game in a strategic manner:\n  - You can go for a boom, simply add 2 more town centers and get bow saw and heavy plow\n  - You can do a hybrid boom + UU relic control, usually that's 1 extra TC right away and then you also add a monastery. Make a few UU and try to get the relics\n  - You can go for a one TC all in. Add unique units and send a vil forward for siege or use petards to break his walls. Very effective with a strong UU. Can always add TCs after initial push wears off\n  - Don't be afraid to add 4th TC in late Castle Age, it's usually a late game map so having a lot of villagers is beneficial. GLHF",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "23_plus_2_vils_fast_castle_boom",
+      "name": "23+2 Vils Fast Castle Boom",
+      "source_pdf_page": 34,
+      "introduction_text": "Recommended civs Burgundians, Poles, Bohemians, Portuguese, Bengalis\n• The plan is to get to castle age as fast as possible with enough resources to start booming with extra TCs and eco upgrades\n• ONLY do this if you will be safe from early pressure (arena/hideout/walls, etc), this is the best way to develop for late game\n• We want to be as efficient as possible in dark age when it comes to resources gathered and try to have 0 idle TC time\n• Pro tip: farming around the stone/gold TC first is ideal because we want more wood/food than minerals in early castle age",
+      "recommended_civ_names": [
+        "Burgundians",
+        "Poles",
+        "Bohemians",
+        "Portuguese",
+        "Bengalis"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 9: Send 3 villagers to wood @@add:wood=3,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 villager to boar @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 vil to make house then mill on berries @@add:food=1,pop=11",
+        "Dark Age: [Highly Recommended] Lure 3 deer with your scout into your tc",
+        "Dark Age - Vil Pop 13: Add 2 more to hunt under TC and grab second boar @@add:food=2,pop=13",
+        "Dark Age - Vil Pop 17: Send 4 more vils to berries @@add:food=4,pop=17",
+        "Dark Age - Vil Pop 17: Seed 4 farms with sheep villagers when the boars run out (3 wood, 14 food)",
+        "Dark Age - Vil Pop 21: Send 4 more villagers to wood (only 1 lumber camp) @@add:wood=4,pop=21",
+        "Dark Age - Vil Pop 23: Send 2 villagers to gold @@add:gold=2,pop=23",
+        "Dark Age - Vil Pop 23: Research Feudal Age (perfect landing time: 10:30) (7 wood, 14 food, 2 gold)",
+        "Feudal Age: When food under tc runs out, send remaining vils to straggler trees",
+        "Feudal Age: Send 1 villager to make a blacksmith",
+        "Feudal Age: Send 2 villager to make a market (usually the ones on straggler trees)",
+        "Feudal Age - Vil Pop 25: Send 2 more villagers to wood (only 1 lumber camp) (9 wood, ? food, ? gold)",
+        "Feudal Age: Research Castle Age (perfect landing time: 14:00)",
+        "Castle Age: Research double bit axe",
+        "Castle Age: Research horse collar",
+        "Castle Age - Vil Pop 25: Send 1 villager from a straggler tree to the main lumber camp (9 wood, 14 food, 2 gold)",
+        "Castle Age - Vil Pop 25: Seed farms with remaining straggler vils (9 wood, 14 food, 2 gold)",
+        "Castle Age: Make 1 TC on a woodline away from your lumber camp",
+        "Castle Age: Research bow saw",
+        "Castle Age: Make another TC on secondary gold or main stone if possible",
+        "Castle Age: Use market to buy food or wood whenever you can afford it",
+        "Castle Age: [Optional] Get heavy plow"
+      ],
+      "whats_next_text": "• We want to continue booming and prioritizing economy for a few more minutes\n• Get wheelbarrow around 18 farms, get handcart whenever you can afford it afterwards\n• Feel free to start mining stone and adding a 4th TC whenever you want\n• Ideally we go for imp after booming, however feel free to add in military if your opponent is pushing or if you want to push\n• Once you finish booming, pick a good composition and commit to it (general rule is 1 gold unit, 1 trash unit, 1 siege unit)\n• Pro tip: keep making vils until you reach 200 pop (not 200 vils!), you can always delete them or use them to make risky castles. Don't slack on creating military!",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "25_vils_fast_castle_into_unique_unit",
+      "name": "25 Vils Fast Castle into Unique Unit",
+      "source_pdf_page": 35,
+      "introduction_text": "Recommended civs Spanish, Turks, Mayans, Burgundians, Mongols\n• The objective of this build is to get to castle age and drop a castle right away\n• A castle is one of the strongest buildings in the game, offering excellent defense and the ability to create your unique unit\n• The goal is to play safe early on, and then look to attack once we mass a few of our unique unit, and we can attack with all of them since we have the castle as defense\n• This build works best when we have a unique unit that's great even without many upgrades, such as conquistador, coustillier, mangudai, janissary, the list goes on there's a bunch. Check out this unique unit tierlist: The BEST Unique Units - Tierlist\n• This build is also excellent on nomadic maps, as you usually go for a fast castle on those since we stock up alot of res early on",
+      "recommended_civ_names": [
+        "Spanish",
+        "Turks",
+        "Mayans",
+        "Burgundians",
+        "Mongols"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 9: Send 3 villagers to wood @@add:wood=3,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 villager to boar @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 vil to make house then mill on berries @@add:food=1,pop=11",
+        "Dark Age: [Highly Recommended] Lure deer to your tc if any are nearby",
+        "Dark Age - Vil Pop 14: Add 3 more to hunt under TC and grab second boar @@add:food=3,pop=14",
+        "Dark Age - Vil Pop 18: Send 4 more vils to berries @@add:food=4,pop=18",
+        "Dark Age - Vil Pop 18: Seed 3 farms with hunt villagers so we dont eat our sheep too fast (3 wood, 15 food) ",
+        "Dark Age - Vil Pop 23: Send 5 more villagers to wood (only 1 lumber camp) (8 wood) @@add:wood=5,pop=23",
+        "Dark Age - Vil Pop 25: Send 2 villagers to gold @@add:gold=2,pop=25",
+        "Dark Age - Vil Pop 25: Research Feudal Age (perfect landing time: 11:20) (8 wood, 15 food, 2 gold)",
+        "Feudal Age - Vil Pop 25: When sheep runs out, send 4 vils to stone to make a mining camp (8 wood, 11 food, 2 gold, 4 stone) @@move:food=4>stone=4",
+        "Feudal Age - Vil Pop 25: Send the other 3 vils to straggler trees and then make the feudal buildings (11 wood, 8 food, 2 gold, 4 stone) @@move:food=3>wood=3",
+        "Feudal Age: Send 1 villager to make a blacksmith",
+        "Feudal Age: Send 2 villager to make a market (usually the ones on straggler trees)",
+        "Feudal Age - Vil Pop 27: Send 2 villagers to stone (Total 6 on stone) @@add:stone=2,pop=27",
+        "Feudal Age: Research Castle Age (perfect landing time: 14:50)",
+        "Castle Age: Research double bit axe",
+        "Castle Age: Research horse collar",
+        "Castle Age: Drop the castle with stone villagers and play from there",
+        "Castle Age: Research bow saw",
+        "Castle Age: When berry villagers go idle, send them to whatever resource you need"
+      ],
+      "whats_next_text": "• Now that you have a castle and are in the castle age, you have a few options\n• First option: we can make our unique unit then slowly add in town centers, in this case send 2-3 vils back to stone but the rest send to mainly farms/wood\n• Second option: continue mining stone with all 9 vils, make your unique unit to gain map control, and then 2-3 mins later you can go forward and drop a second castle in his face to easily win the game early on\n• Third option is to go off stone entirely and 1 tc push with unique unit and siege, in this case after the vils build the castle send them to wood/gold/farms\n• Regardless what you go for, make sure you get some value from your unique unit, or at least make sure the defensive castle accomplishes something, or else we just fall behind as we delay our town centers by going for that castle drop early",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "25_vils_fast_castle_light_cav_relic_control",
+      "name": "25 Vils Fast Castle Light Cav Relic Control",
+      "source_pdf_page": 36,
+      "introduction_text": "• This build order is excellent for arena, but can also be used in other maps that are a bit more slow paced and defensive, like hideout, gold rush, yucatan, etc\n• The goal of this build is to get control of the relics asap, and then also keep an eye on your opponent\n• The very minimal investment into light cav + monks lets u match enemy boom pretty well, while also having map control\n• Those units are also really effective at small skirmishes, which is what you are looking for",
+      "recommended_civ_names": [],
+      "is_generic": true,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 9: Send 3 villagers to wood @@add:wood=3,pop=9",
+        "Dark Age - Vil Pop 10: Send 1 villager to boar @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 vil to make house then mill on berries @@add:food=1,pop=11",
+        "Dark Age: [Highly Recommended] Lure 3 deer with your scout into your tc",
+        "Dark Age - Vil Pop 14: Add 3 more to hunt under TC and grab second boar @@add:food=3,pop=14",
+        "Dark Age - Vil Pop 18: Send 4 more vils to berries and make another house @@add:food=4,pop=18",
+        "Dark Age - Vil Pop 18: Seed 3 farms with sheep villagers when the boars run out (3 wood, 15 food)",
+        "Dark Age - Vil Pop 23: Send 5 more villagers to wood (only 1 lumber camp) (8 wood) @@add:wood=5,pop=23",
+        "Dark Age - Vil Pop 25: Send 2 villagers to gold @@add:gold=2,pop=25",
+        "Dark Age - Vil Pop 25: Research Feudal Age (perfect landing time: 11:20) (8 wood, 15 food, 2 gold)",
+        "Feudal Age: When food under tc runs out, send remaining vils to straggler trees",
+        "Feudal Age: Build a barracks",
+        "Feudal Age: Send 2 villagers to make a stable",
+        "Feudal Age: Send 2 villagers to make a market",
+        "Feudal Age - Vil Pop 27: Send 2 more villagers to wood (only 1 lumber camp) (10 wood) @@add:wood=2,pop=27",
+        "Feudal Age: Research Castle Age (perfect landing time: 14:50)",
+        "Castle Age: Research double bit axe",
+        "Castle Age: Research horse collar",
+        "Castle Age - Vil Pop 27: Send the 4 villagers who made the buildings back to straggler trees (10 wood, 15 food, 2 gold) ",
+        "Castle Age: Seed a few more farms after horse collar finishes",
+        "Castle Age: Make 2-3 more scouts",
+        "Castle Age: Add a monastery right away",
+        "Castle Age: Research bow saw",
+        "Castle Age: Make a TC when you can afford it",
+        "Castle Age: [Optional] Get light cav if opponent is also contesting relics"
+      ],
+      "whats_next_text": "• Add more light cav + monks if opponent is contesting relics, otherwise just add a 3rd tc and boom up while taking all 5 relics\n• Patrol light cav around the map, to keep an eye on your opponent once youve won the relic war. On arena this means patrolling their walls to see what they move out with\n• Add a 4th tc if needed, and just boom till imperial age\n• Pro tip, if you get pushed and they are going faster to imp, move your relics to the back so you dont lose them, then try to hold their push. If you succeed, you auto win late game cuz of the 5 relics in your control",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "25_vils_knight_rush",
+      "name": "25 Vils Knight Rush",
+      "source_pdf_page": 38,
+      "introduction_text": "Recommended civs Franks, Magyars, Slavs, Berbers, Huns\n• This is my only pure beginner build order. This is meant for low level players, or new players just learning the game\n• I will keep it simple and easy to use. Its not a good build order as you climb, but it should be very effective for the first hundred games\n• The point is to have an easy to do dark and feudal age, and look to get to knights as fast as possible, that is the best unit for new players generally speaking\n• At the end of the build we will cover some nice options to defend yourself, and also talk about how to beat pikes/camels - the main knight counters",
+      "recommended_civ_names": [
+        "Franks",
+        "Magyars",
+        "Slavs",
+        "Berbers",
+        "Huns"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age: Make 2 houses to start",
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 9: Send 3 villagers to wood @@add:wood=3,pop=9",
+        "Dark Age: [Optional] Get loom before luring boar if you need it",
+        "Dark Age - Vil Pop 10: Send 1 villager to boar @@add:food=1,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 vil to build 2 houses and then mill berries @@add:food=1,pop=11",
+        "Dark Age - Vil Pop 12: 1 to hunt under tc @@add:food=1,pop=12",
+        "Dark Age - Vil Pop 13: 1 to get second boar @@add:food=1,pop=13",
+        "Dark Age - Vil Pop 17: Send 4 more to berries @@add:food=4,pop=17",
+        "Dark Age - Vil Pop 22: Send 5 villagers to wood (8 wood) @@add:wood=5,pop=22",
+        "Dark Age: Make a house",
+        "Dark Age - Vil Pop 25: Send 3 villagers to gold @@add:gold=3,pop=25",
+        "Dark Age: Get loom if you didn't get it earlier",
+        "Dark Age - Vil Pop 25: Research Feudal Age (perfect landing time: 11:45) (8 wood, 14 food, 3 gold)",
+        "Feudal Age: Make a barracks and a house",
+        "Feudal Age: [Optional] Wall up your base slightly to defend yourself if you need to",
+        "Feudal Age: When food runs out under tc make a few farms and send the rest to wood",
+        "Feudal Age: Make a stable and market with 2 vils",
+        "Feudal Age - Vil Pop 29: Send 4 villagers to gold (7 gold total) @@add:gold=4,pop=29",
+        "Feudal Age: Research Castle Age (perfect landing time: 16:05)",
+        "Castle Age: Add a second stable",
+        "Castle Age: Research double bit axe",
+        "Castle Age: Research horse collar",
+        "Castle Age: Fix any idle economy",
+        "Castle Age: Make knights from both stables",
+        "Castle Age: Research bow saw",
+        "Castle Age: Keep making vils and send them to whatever you need to keep knight production up"
+      ],
+      "whats_next_text": "• Try to spend your resources quickly, and continue to invest them. A nice trick is to use the market to help balance them out\n• Keep making knights and villagers whenever you can\n• Get upgrades on the knighs when you can afford them, bloodlines, husbandry, and blacksmith upgrades are all great options\n• Expand your base and develop by adding in more town centers",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "26_vils_armenian_spear_rush_into_fast_castle_relic_control",
+      "name": "26 Vils Armenian Spear Rush Into Fast Castle Relic Control",
+      "source_pdf_page": 40,
+      "introduction_text": "• Goal of this build is to harass the opponent in dark age with a unit that outruns vils and destroys scouts\n• Wall up behind it and stay safe until Castle Age\n• We immediately get a defensive building and one that can create a strong army to defend ourselves in Castle Age\n• Warrior priest is insane vs any feudal army so its going to be easy to defend with the church\n• Then we grab up to 6 relics and coast to an easy late game",
+      "recommended_civ_names": [
+        "Armenians"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 10: Send 4 villagers to wood @@add:wood=4,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 villager to boar @@add:food=1,pop=11",
+        "Dark Age: Send 1 vil to build house>barracks>house in front and start walling slowly ",
+        "Dark Age - Vil Pop 14: Send 2 more vils to boar under TC @@add:food=2,pop=14",
+        "Dark Age: [Optional] Lure deer",
+        "Dark Age - Vil Pop 15: Send 1 vil to get second boar @@add:food=1,pop=15",
+        "Dark Age - Vil Pop 17: Send 2 more vils to boar under TC @@add:food=2,pop=17",
+        "Dark Age: Make 2-3 spears from barracks and send them to harass with your scout",
+        "Dark Age - Vil Pop 23: Send 6 vils to berries and build a mill @@add:food=6,pop=23",
+        "Dark Age - Vil Pop 23: Move 2 vils from hunt to wall (3 total, make sure opponent can't get in) (4 wood, 16 food) @@set:food=16",
+        "Dark Age - Vil Pop 26: Send 3 villagers to gold @@add:gold=3,pop=26",
+        "Dark Age - Vil Pop 26: Send 5 vils from food to wood (9 total) (9 wood, 11 food, 3 gold) @@move:food=5>wood=5",
+        "Dark Age: Start making farms as sheep run out",
+        "Dark Age: Research loom",
+        "Dark Age - Vil Pop 26: Research Feudal Age (perfect landing time: 12:10) (9 wood, 11 food, 3 gold)",
+        "Feudal Age - Vil Pop 26: Send walling vils to straggler trees when they are done (12 wood, 11 food, 3 gold) @@add:wood=3,pop=26",
+        "Feudal Age: Make sure to micro mule cart to keep the woodline as efficient as possible",
+        "Feudal Age: Feudal buildings with 3 straggler vils (Recommend to do market + blacksmith)",
+        "Feudal Age - Vil Pop 28: Send 2 villagers to gold (5 gold total)  @@add:gold=2,pop=28",
+        "Feudal Age: NOTE: If you can't afford Castle Age, make 1-2 more vils or use the market",
+        "Feudal Age: Research Castle Age (perfect landing time: 15:40)",
+        "Castle Age: Research double bit axe",
+        "Castle Age: Research horse collar",
+        "Castle Age: Make fortified church in a great defensive location",
+        "Castle Age: Spam warrior priests to get relics ASAP",
+        "Castle Age: Research bow saw"
+      ],
+      "whats_next_text": "• Place your church in the position that best defends your base. Remember it shoots arrows right away with the 1 relic\n• If under heavy pressure consider getting armor upgrades for your warrior priests, and definitely pick up squires asap\n• Once you have dealt with enemy army go pick up all the relics on the map and start developing your eco\n• Start adding TCs and develop your economy\n• Harass enemy with whatever leftover priests after you get the relics, or use them to defend\n• Don't overcommit to attacking early castle age, our main goal is to out boom and win in late castle/early imp and we always have relic advantage for super late imp",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "27_plus_2_vils_drush_fast_castle",
+      "name": "27+2 Vils Drush Fast Castle",
+      "source_pdf_page": 42,
+      "introduction_text": "Recommended civs Britons, Ethiopians, Italians, Mayans, Vikings\n• This strategy has gotten nerfed quite hard over the last few years, but it is still playable if you have a good map\n• I'd only recommend doing a drush fast castle if you can fully wall easily or somewhat easily, so you are safe from enemy aggression\n• If done correctly you will be in Castle Age first, with significant tech and eco advantage\n• You can add TCs earlier, get Bow Saw earlier, and pressure with crossbows right away\n• It's a flexible strategy, meaning after the drush, should you get tower rushed or whatnot, you can easily decide to stay in Feudal Age and defend yourself. You DO NOT have to force the Castle Age if it is too risky",
+      "recommended_civ_names": [
+        "Britons",
+        "Ethiopians",
+        "Italians",
+        "Mayans",
+        "Vikings"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 10: Send 4 villagers to wood @@add:wood=4,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 villager to boar @@add:food=1,pop=11",
+        "Dark Age: Send 1 vil to make 2 houses then barracks. NOTE: After making the barracks, continue walling your map with palisades and 1-2 houses (don't get housed)",
+        "Dark Age - Vil Pop 13: Send 1 vil to get 10 gold, then go back to boar @@add:food=1,gold=1,pop=13",
+        "Dark Age: Make 3 militias and send them forward to harass opponent",
+        "Dark Age - Vil Pop 14: Send 1 vil to get second boar @@add:food=1,pop=14",
+        "Dark Age - Vil Pop 19: Send next 5 vils to berries and build a mill @@add:food=5,pop=19",
+        "Dark Age - Vil Pop 23: Send next 4 vils to wood on 1 lumber camp (8 wood) @@add:wood=4,pop=23",
+        "Dark Age: Research loom (you don't want to delay loom too much so you don't lose vils to a Feudal Age scout)",
+        "Dark Age - Vil Pop 27: Send 4 villagers to gold @@add:gold=4,pop=27",
+        "Dark Age - Vil Pop 27: Research Feudal Age (perfect landing time: 12:35) (8 wood, 14 food, 4 gold)",
+        "Feudal Age: Finish walling your map using any villager that's available. Once finished walling, they can go on any resource you deem necessary",
+        "Feudal Age: Continue harassing opponent with your militia and scout",
+        "Feudal Age - Vil Pop 29: Send 2 villagers to gold (6 gold total) @@add:gold=1,pop=29",
+        "Feudal Age: Make a range with 2 vils + blacksmith with 1 vil",
+        "Feudal Age: NOTE: If you get attacked or things go wrong, feel free to spend more time in Feudal Age, and even abandon the FC plan if necessary",
+        "Feudal Age: Research Castle Age (perfect landing time: 16:05)",
+        "Castle Age: Start massing archers from 1 range",
+        "Castle Age: Research double bit axe",
+        "Castle Age: Research horse collar",
+        "Castle Age: Research fletching",
+        "Castle Age: When berries run out, send the vils to whatever you think is best for your follow-up"
+      ],
+      "whats_next_text": "• That's the end of the build order. Here are a few things you can do to continue the game in a strategic manner:\n  - You can add a 2nd range, and go up to 9 on gold, for 2-range xbow aggression. This style hurts your economy alot, but if you find a ton of damage, you can basically win the game instantly\n  - Standard approach is to stay on 1 range and get bow saw + crossbow upgrade start of Castle Age. If you can afford bodkin it's great, if not just save up for it\n  - I would look to add 1 TC very quickly, and then hold off before adding the 3rd. Consider options like balistics, monastery, or siege beforehand (helps you stabilize the game and not have a fragile economy for another 10 minutes)\n  - The main strength of this strategy is having an economy lead via early 2nd TC. Its also very hard to lose the game if done correctly, because you are always 1 step ahead of the curve tech-wise\n  - Play smart and strategic, and use that economy lead to win the game. GLHF!",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    },
+    {
+      "id": "28_plus_2_plus_2_vils_turk_fast_imperial",
+      "name": "28+2+2 Vils Turk Fast Imperial",
+      "source_pdf_page": 44,
+      "introduction_text": "• The objective of this build is to get to Imperial Age as fast as possible and start making gunpowder units, which are the strongest units you can make that require few upgrades\n• We get chemistry free with Turks, so there's no waiting time before pumping them out\n• Even though we will have low economy, our units will be very strong, and our opponent likely isn't ready to deal with heavy army\n• Really good strat if you're not an arena player, and just want a cheesy strategy to get free wins",
+      "recommended_civ_names": [
+        "Turks"
+      ],
+      "is_generic": false,
+      "steps": [
+        "Dark Age - Vil Pop 6: Send 6 villagers to sheep @@set:food=6,pop=6",
+        "Dark Age - Vil Pop 10: Send 4 villagers to wood @@add:wood=4,pop=10",
+        "Dark Age - Vil Pop 11: Send 1 villager to boar @@add:food=1,pop=11",
+        "Dark Age - Vil Pop 12: Send 1 vil to make house then mill on berries @@add:food=1,pop=12",
+        "Dark Age - Vil Pop 14: Send 2 villagers to berries @@add:food=2,pop=14",
+        "Dark Age: [Required] Lure 3 deer with your scout into your TC",
+        "Dark Age - Vil Pop 15: Send 1 villager to boar @@add:food=1,pop=15",
+        "Dark Age - Vil Pop 16: Send 1 vil to make house then go to berries (4 total) @@add:food=1,pop=16",
+        "Dark Age - Vil Pop 19: Send next 3 vils to gather food under TC @@add:food=3,pop=19",
+        "Dark Age - Vil Pop 23: Send 4 villagers to wood (8 wood) @@add:wood=4,pop=23",
+        "Dark Age: Make farms with your sheep vils gradually as your sheep start to run out",
+        "Dark Age - Vil Pop 28: Send 5 villagers to gold @@add:gold=5,pop=28",
+        "Dark Age - Vil Pop 28: Research Feudal Age (perfect landing time: 12:35) (8 wood, 15 food, 5 gold)",
+        "Feudal Age - Vil Pop 28: As hunt finishes, move 1 vil to berries and 3 vils to straggler trees (11 wood, 12 food, 5 gold) @@move:food=1>food=1, food=3>wood=3",
+        "Feudal Age: Send 1 villager to make a blacksmith",
+        "Feudal Age: Send 2 villager to make a market (usually the ones on straggler trees)",
+        "Feudal Age - Vil Pop 30: Send 2 villagers to gold (7 gold total) @@add:gold=2,pop=30",
+        "Feudal Age: Research Castle Age (perfect landing time: 16:05)",
+        "Feudal Age - Vil Pop 30: Send the vils that made the feudal buildings to farms (8 wood, 15 food, 7 gold) @@move:wood=3>food=3",
+        "Castle Age: Research double bit axe",
+        "Castle Age: Research gold mining",
+        "Castle Age: Sell 200 stone",
+        "Castle Age - Vil Pop 32: Send 2 villagers to gold (9 gold total) @@add:gold=2,pop=32",
+        "Castle Age: Send 3 vils from wood to make a siege workshop and monastery",
+        "Castle Age: Research Imperial Age (perfect landing time: 20:05)",
+        "Imperial Age - Vil Pop 32: As berries expire, move the vils to a second mining camp (8 wood, 11 food, 13 gold) @@move:food=4>gold=4",
+        "Imperial Age: Use the market to get enough wood to make a barracks and 2 ranges",
+        "Imperial Age: Get the first archer armor upgrade",
+        "Imperial Age: [Optional] Make a monk and pick up relics",
+        "Imperial Age: Keep making villagers and send them to whichever resources you need",
+        "Imperial Age: Make hand cannoneers from 2 ranges and make 1-2 bombard cannons"
+      ],
+      "whats_next_text": "• Getting armor on hand cannons is amazing when up against enemy range units\n• If enemy is going knights then you should add monks to help out with conversions and healing\n• Push as fast as possible, but if you see your opponent has a lot of army trying to defend in castle age, then make sure you group up your army well before pushing, we don't want to lose any stray units\n• Don't bother adding economy until way later, I'd recommend to spend the first 10 minutes in imp on 1 TC, simply adding in more army will always be best\n• If opponent is trying to go imp himself, try to enter his base and target his town centers first, you never know when you can kill the one that is researching Imperial Age ;)",
+      "video_url": "https://www.patreon.com/heraaoe2"
+    }
+  ],
+  "strategyQuizzes": {
+    "defensive": [],
+    "offensive": []
+  },
+  "strategyVideos": {
+    "defensive": [],
+    "offensive": []
+  }
+}
