@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
+import {notFound} from "next/navigation";
 import data from "data/strategy.json";
 import type {StrategyData, BuildOrder} from "@/types/strategy";
+import type {Metadata} from "next";
 import React from "react";
 
 /** Resource order & icons shown on the right */
@@ -143,6 +146,27 @@ function apply(op: Op, changes: Partial<Totals>, moves: Move[], prev: Totals): T
     return next;
 }
 
+export function generateStaticParams() {
+    const d = data as StrategyData;
+    return d.buildOrders.map((b) => ({id: b.id}));
+}
+
+export async function generateMetadata({
+                                           params,
+                                       }: {
+    params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+    const {id} = await params;
+    const d = data as StrategyData;
+    const build = d.buildOrders.find((b) => b.id === id);
+    if (!build) return {title: "Strategy not found · AoE2 Strategy Companion"};
+    const desc = (build.introduction_text || "").trim().replace(/\s+/g, " ").slice(0, 155);
+    return {
+        title: `${build.name} · AoE2 Strategy Companion`,
+        description: desc || undefined,
+    };
+}
+
 export default async function StrategyPage({
                                                params,
                                            }: {
@@ -153,7 +177,7 @@ export default async function StrategyPage({
     const d = data as StrategyData;
     const build = d.buildOrders.find((b) => b.id === id) as BuildOrder | undefined;
 
-    if (!build) return <div className="container">Not found.</div>;
+    if (!build) notFound();
 
     // Build rows: { text (without annotation), totals after step }
     const rows: { text: string; totals: Totals }[] = [];
@@ -182,6 +206,19 @@ export default async function StrategyPage({
 
     return (
         <main className="container" style={{maxWidth: 860}}>
+            <Link
+                href="/"
+                style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 6,
+                    marginBottom: 16,
+                    color: "var(--muted)",
+                    textDecoration: "none",
+                }}
+            >
+                ← Back to strategies
+            </Link>
             <h1 style={{fontSize: "1.8rem", fontWeight: 800, marginBottom: 8}}>
                 {build.name}
             </h1>
