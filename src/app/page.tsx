@@ -38,6 +38,8 @@ const TAGS: { key: Tag; label: string; query: string[] }[] = [
 type StrategyMode = "all" | "generic" | "civ"; // menu: Strategies
 
 const d = data as StrategyData;
+const builds = d.buildOrders as BuildOrder[];
+const civsSorted = [...d.civilizations].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function Home() {
     // Search
@@ -61,9 +63,6 @@ export default function Home() {
         window.addEventListener("keydown", onKey);
         return () => window.removeEventListener("keydown", onKey);
     }, []);
-
-    const builds = d.buildOrders as BuildOrder[];
-    const civsSorted = [...d.civilizations].sort((a, b) => a.name.localeCompare(b.name));
 
     const filtered = useMemo(() => {
         const q = query.trim().toLowerCase();
@@ -102,7 +101,7 @@ export default function Home() {
                 b.introduction_text.toLowerCase().includes(q)
             );
         });
-    }, [builds, query, filterCivId, strategyMode, activeTag]);
+    }, [query, filterCivId, strategyMode, activeTag]);
 
     // Helpers
     const closeHUD = () => setOpenMenu(null);
@@ -182,20 +181,15 @@ export default function Home() {
                 </div>
 
                 {/* RIGHT: Hera logo chip */}
-                <a
-                    className="brand-chip"
-                    href="#"
-                    aria-label="Hera"
-                    title="Hera"
-                >
+                <div className="brand-chip" title="Hera">
                     <Image
-                        src="/images/hera-logo.png"  /* put the file at /public/images/hera-logo.png */
+                        src="/images/hera-logo.png"
                         alt="Hera"
                         width={60}
                         height={60}
                         className="brand-chip-img"
                     />
-                </a>
+                </div>
             </div>
 
             {/* === HUD Overlay (click outside to close) === */}
@@ -303,11 +297,24 @@ export default function Home() {
             )}
 
             {/* === Cards Grid === */}
-            <div className={`cards-grid ${isHUDOpen ? "blurred-underlay" : ""}`}>
-                {filtered.map((b) => (
-                    <StrategyCard key={b.id} build={b}/>
-                ))}
-            </div>
+            {filtered.length > 0 ? (
+                <div className={`cards-grid ${isHUDOpen ? "blurred-underlay" : ""}`}>
+                    {filtered.map((b) => (
+                        <StrategyCard key={b.id} build={b}/>
+                    ))}
+                </div>
+            ) : (
+                <p
+                    style={{
+                        textAlign: "center",
+                        color: "var(--muted)",
+                        padding: "64px 0",
+                        fontSize: "1rem",
+                    }}
+                >
+                    No strategies match your filters. Try clearing a filter.
+                </p>
+            )}
         </main>
     );
 }
