@@ -7,6 +7,8 @@ its step-by-step order with running resource/population totals.
 Built with Next.js (App Router) + React. All data is local — no backend,
 no external services.
 
+![AoE2 Strategy Companion — browse build orders by civilization, strategy, or unit](docs/home.jpg)
+
 ## Getting Started
 
 ```bash
