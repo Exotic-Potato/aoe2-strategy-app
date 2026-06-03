@@ -1,5 +1,7 @@
 # AoE2 Strategy Companion
 
+🔗 **Live demo:** https://aoe2-strategy-app-three.vercel.app
+
 A clean, fast browser for Age of Empires II build orders. Pick a
 civilization, filter by strategy type or unit, and open any build to see
 its step-by-step order with running resource/population totals.
